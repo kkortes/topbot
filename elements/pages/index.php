@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12">
+  <div class="crow">
+    <div class="ws-12">
       <?=r('breadcrumb')?>
 
       <h2>What is topbot?</h2>

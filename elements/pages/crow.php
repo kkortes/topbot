@@ -1,7 +1,7 @@
 <div class="fullwidth" style="background:url(<?=path()?>/crow-1.0/crow.png) no-repeat;background-size:cover;">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="crow">
+      <div class="ws-12">
         <?=r('breadcrumb')?>
 
         <h2>This is <span class="icon icon-crow"></span></h2>

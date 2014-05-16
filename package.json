@@ -1,0 +1,9 @@
+{
+  "name": "topbot",
+  "version": "0.0.1",
+  "description": "A node test",
+  "dependencies": {
+    "mime": "^1.2.11",
+    "socket.io": "^0.9.16"
+  }
+}

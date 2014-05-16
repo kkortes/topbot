@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row mod-row">
-    <div class="col-sm-12">
+  <div class="crow mod-row">
+    <div class="ws-12">
       <?=r('breadcrumb')?>
     </div>
   </div>
@@ -11,96 +11,96 @@
   $class = end($class);
 ?>
 <div class="container">
-  <div class="row mod-row">
-    <div class="col-sm-3">
+  <div class="crow mod-row">
+    <div class="ws-3">
       <span class="label label-info pull-right">25 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="ws-3">
       <span class="label label-info pull-right">25 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="ws-3">
       <span class="label label-info pull-right">25 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="ws-3">
       <span class="label label-info pull-right">25 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
   </div>
-  <div class="row mod-row">
-    <div class="col-sm-4">
+  <div class="crow mod-row">
+    <div class="ws-4">
       <span class="label label-info pull-right">33 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="ws-4">
       <span class="label label-info pull-right">33 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="ws-4">
       <span class="label label-info pull-right">33 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
   </div>
-  <div class="row mod-row">
-    <div class="col-sm-9">
+  <div class="crow mod-row">
+    <div class="ws-9">
       <span class="label label-info pull-right">75 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="ws-3">
       <span class="label label-info pull-right">25 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
   </div>
-  <div class="row mod-row">
-    <div class="col-sm-6">
+  <div class="crow mod-row">
+    <div class="ws-6">
       <span class="label label-info pull-right">50 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-6">
+    <div class="ws-6">
       <span class="label label-info pull-right">50 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
   </div>
-  <div class="row mod-row">
-    <div class="col-sm-8">
+  <div class="crow mod-row">
+    <div class="ws-8">
       <span class="label label-info pull-right">66 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="ws-4">
       <span class="label label-info pull-right">33 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
       </div>
     </div>
   </div>
-  <div class="row mod-row">
-    <div class="col-sm-12">
+  <div class="crow mod-row">
+    <div class="ws-12">
       <span class="label label-info pull-right">100 %</span>
       <div class="mod mod-<?=$class?>">
         <?=r('modules/'.$module)?>
