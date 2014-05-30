@@ -122,7 +122,6 @@
   if(!function_exists('renderList')) {
     function renderList($pagetree, $render = '') {
       foreach($pagetree as $node => $path) {
-        $file = $path.$node;
         if(is_array($path)) {
           $render .= '<li class="directory" rel="'.str_replace('.','', $node).'">'.$node.' <span>+</span></li><ul>';
           $render = renderList($path, $render).'</ul>';
