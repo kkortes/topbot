@@ -1,8 +1,8 @@
 <div class="bot">
   <div class="fullwidth">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
+      <div class="crow">
+        <div class="ws-12">
           { <?=__('bot')?> }
         </div>
       </div>

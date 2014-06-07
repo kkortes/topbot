@@ -1,8 +1,8 @@
 <div class="top">
   <div class="fullwidth">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
+      <div class="crow">
+        <div class="ws-12">
         	<div class="clearfix">
 	        	<div class="pull-left">
 	          	{ <?=__('top')?> }

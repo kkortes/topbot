@@ -1,10 +1,3 @@
-socket = io.connect('http://localhost:8080')
-socket.on 'news', (data) ->
-  console.log data
-  socket.emit 'my other event', {
-    my: 'data'
-  }
-
 $('img').each ->
   if !$(this).attr('src')
     $(this).attr('src', window.dpath+'/assets/image/dummies/dummy-rectangular.jpg')
