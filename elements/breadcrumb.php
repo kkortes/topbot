@@ -15,7 +15,7 @@
           if($page[0] == 'modules') continue;
           if($page[0] == 'crow') continue;
         ?>
-          <li><a href="/<?=$page[0]?>"><?=$page[0]?></a></li>
+          <li><a href="<?=path()?><?=$page[0]?>"><?=$page[0]?></a></li>
         <? 
         }
       }
@@ -34,7 +34,7 @@
 
         if(isset($page[1])) {
         ?>
-          <li><a href="/modules/module/<?=$page[0]?>"><?=$page[0]?></a></li>
+          <li><a href="<?=path()?>modules/module/<?=$page[0]?>"><?=$page[0]?></a></li>
         <? 
         }
       }

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="crow">
       <div class="ws-12">
-        <?=r('breadcrumb')?>
+        <?=$app->get('breadcrumb')?>
 
         <h2>This is <span class="icon icon-crow"></span></h2>
         <p>
@@ -33,7 +33,7 @@
 
         <h2>Setup</h2>
         <ul>
-          <li><a href="/index/page/crow-1.0?download=css/crow.css">Download <span class="icon icon-crow"></span>.css</a> or 
+          <li><a href="/index/page/crow-1.0?download=assets/css/crow.css">Download <span class="icon icon-crow"></span>.css</a> or 
           <a href="/index/page/crow-1.0?download=crow-1.0/crow.less">download <span class="icon icon-crow"></span>.less</a>
             <?/*or embed it directly through this API-url (http://cdn.crow.com)*/?></li>
           <li>Crow is just a regular .css-file, include in in your <?=htmlspecialchars('<head>')?>-tag and you are ready to go!</li>

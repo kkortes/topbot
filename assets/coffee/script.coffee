@@ -1,6 +1,6 @@
 $('img').each ->
   if !$(this).attr('src')
-    $(this).attr('src', window.dpath+'/assets/image/dummies/dummy-rectangular.jpg')
+    $(this).attr('src', window.dpath+'assets/image/dummies/dummy-rectangular.jpg')
 
 $('.file-list li').click ->
   obj = $(this)

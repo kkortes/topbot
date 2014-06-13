@@ -1,7 +1,7 @@
 <div class="container">
   <div class="crow">
     <div class="ws-12">
-      <?=r('breadcrumb')?>
+      <?=$app->get('breadcrumb')?>
 
       <h2>What is topbot?</h2>
       <p>

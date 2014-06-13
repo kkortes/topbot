@@ -1,7 +1,7 @@
 <div class="container">
   <div class="crow">
     <div class="ws-12">
-      <?=r('breadcrumb')?>
+      <?=$app->get('breadcrumb')?>
 
       <h2>Download</h2>
 
@@ -66,10 +66,10 @@
       <h2>Instructions</h2>
       <div class="crow">
         <div class="ws-6">
-          <?=r('file-instructions')?>
+          <?=$app->get('file-instructions')?>
         </div>
         <div class="ws-6">
-          <?=r('file-list')?>
+          <?=$app->get('file-list')?>
         </div>
       </div>
     </div>

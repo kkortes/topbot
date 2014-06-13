@@ -1,3 +1,10 @@
+<div class="container">
+  <div class="crow">
+    <div class="ws-12">
+      <?=$app->get('breadcrumb')?>
+    </div>
+  </div>
+</div>
 <?
 	include "layouts/configuration.php";
 
@@ -31,7 +38,7 @@
 					$args = array_replace($args, $conf);
 					$args[-1] = $key;
 					echo '<h2>'.str_replace('layouts/', '', $layout).' <span style="font-size:50%;">- '.$key.'</span></h2><hr />';
-					echo render('../'.$layout, array('args' => $args));
+					echo $app->get('../'.$layout, array('args' => $args));
 					echo '</div>';
 				}
 				$i++;
@@ -43,5 +50,5 @@
 	?>
 </div>
 <?
-	_epr($allstyles);
+	var_dump($allstyles);
 ?>

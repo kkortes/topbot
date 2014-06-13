@@ -1,9 +1,11 @@
-<? include_once "functions.php"; ?>
-<!DOCTYPE html>
-<?
-  r('header');
+<? 
+  include_once "core/App.php";
+  $app = new App(array('core/init', 'functions'), __DIR__);
+  $app->pointer = 'elements/';
+  
+  echo $app->get('header');
 
-  r('pages/'.(isset($_GET['page']) ? $_GET['page'] : 'index'));
+  echo $app->get('pages/'.(isset($_GET['page']) ? $_GET['page'] : 'index'));
 
-  r('footer');
+  echo $app->get('footer');
 ?>

@@ -5,7 +5,7 @@
 			<?
 				$allstyles = Nostyle::getAll();
 				$layout = 'layouts/lists/li';
-				echo render('../'.$layout, array('args' => $allstyles['lists']['unstyled']));
+				echo $app->get('../'.$layout, array('args' => $allstyles['lists']['unstyled']));
 			?>
 			<?=$args[4]?>
 		</div>

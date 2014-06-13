@@ -8,7 +8,7 @@
 	          	{ <?=__('top')?> }
           	</div>
           	<div class="pull-right">
-          		<a href="/crow" class="icon icon-crow"></a>
+          		<a href="<?=path()?>crow" class="icon icon-crow"></a>
           	</div>
           </div>
         </div>
