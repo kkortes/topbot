@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="image/png" href="<?=$app->url?>favicon.ico?v=2" />
+  <link rel="icon" type="image/png" href="<?=$app->url?>favicon.ico?v=3" />
   
   <!-- Crow standalone, remove if not desired -->
   <link rel="stylesheet" type="text/css" href="<?=$app->url?>assets/css/crow.css" />
