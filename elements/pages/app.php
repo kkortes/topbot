@@ -86,8 +86,8 @@
 				<hr />
 
 				<h3>Lastly</h3>
-				<p>App.php is totally optional. You can remove the file and SAMPLE.config.json.php if so desired. They are not hooked onto any other file, so don't worry about craches based on dependencies.</p>
-				<p>You can have several App.php setups in your project. Lets say you have two apps in your main app, and wants curresponding server variables to each app. Just make sure a copy config.json.php is located in each and every app root.</p>
+				<p>App.php is totally optional. You can remove the file and SAMPLE.config.json.php if so desired. They are not hooked onto any other file, so don't worry about crashes based on dependencies.</p>
+				<p>You can have several App.php setups in your project. Lets say you have two apps in your main app, and wants curresponding server variables to each app. Just make sure a copy of config.json.php is located in each and every app root.</p>
 				<p>When including files to your project, use $app->root. If you want to include something from your web root (not nessecarly the same as project root) use $app->server_root. When linking to pages or anything else, the same goes for $app->url and $app->server_url.</p>
 
 				<p>Now code happy! App.php ignores if you use "localhost/myproject", "myproject" or "myproject.com" as your developing url, it will give you the right system variables no matter what. This is very convenient when you are hosting your web live aswell.</p>
