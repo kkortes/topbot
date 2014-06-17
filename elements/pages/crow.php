@@ -30,8 +30,8 @@
 
         <h2>Setup</h2>
         <ul>
-          <li><a href="<?=$app->url?>index/page/crow-1.0?download=assets/css/crow.css">Download <span class="icon icon-crow"></span>.css</a> or 
-          <a href="<?=$app->url?>index/page/crow-1.0?download=crow-1.0/crow.less">download <span class="icon icon-crow"></span>.less</a>
+          <li><a href="<?=$app->url?>index/crow-1.0?download=assets/css/crow.css">Download <span class="icon icon-crow"></span>.css</a> or 
+          <a href="<?=$app->url?>index/crow-1.0?download=crow-1.0/crow.less">download <span class="icon icon-crow"></span>.less</a>
             <?/*or embed it directly through this API-url (http://cdn.crow.com)*/?></li>
           <li>Crow is just a regular .css-file, include in in your <?=htmlspecialchars('<head>')?>-tag and you are ready to go!</li>
         </ul>
