@@ -33,10 +33,10 @@
           <div class="ws-3">
             <?=$app->get('file-list')?>
           </div>
-          <div class="ws-5 up">
+          <div class="ws-5">
             <?=$app->get('file-instructions')?>
           </div>
-          <div class="ws-4 up">
+          <div class="ws-4">
             
           </div>
         </div>

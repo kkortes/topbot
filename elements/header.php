@@ -13,6 +13,6 @@
 
   <link rel="stylesheet" type="text/css" href="<?=$app->url?>assets/css/base.css" />
 </head>
-<body class="<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>">
+<body class="page-<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>">
 <?=$app->get('parts/top')?>
 <div id="wrapper">

@@ -1,4 +1,9 @@
 <div class="fullwidth">
+	<div class="container">
+		<h2>Nostyle is under construction</h2>
+		<p>Nostyle is a style library with no stylings (color, sizes, margins), just beautiful and correct css rules to handle different layouts.
+		</p>
+	</div>
 	<?
 		include "layouts/configuration.php";
 

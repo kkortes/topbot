@@ -50,7 +50,8 @@
 ?>
 <div class="viewport">
   <div class="start">
-    Click any file or directory for instructions.
+    Click any file or directory for instructions.<br /><br />
+    Temporary: All files does not have instructions yet, and some may not be 100% accurate. You may contribute with descriptions if you'd like.
   </div>
   <?
   foreach($instructions as $file => $instruction) {

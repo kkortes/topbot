@@ -7,7 +7,7 @@
 				<p>When developing a web it's important to have good server variables to use for links and includes, this is what App.php does for you.</p>
 				<p>Don't you think it would be nice to be able to use:
 				<code><?=htmlspecialchars('<script src="<?=$app->url?>assets/script.js"></script>');?></code>
-				everywhere and not worry if your url structure is "localhost/myweb", "myweb" or "myweb.com".
+				everywhere and not worry if your url structure is "localhost/myweb", "myweb" or "myweb.com"?
 				</p>
 				<p>App.php can be included standalone, as it is. Though if you do it that way, it's important that the file is placed in your project root folder. If not, it's parameters won't be accurate.
 				</p>
@@ -91,7 +91,6 @@
 				<p>When including files to your project, use $app->root. If you want to include something from your web root (not nessecarly the same as project root) use $app->server_root. When linking to pages or anything else, the same goes for $app->url and $app->server_url.</p>
 
 				<p>Now code happy! App.php ignores if you use "localhost/myproject", "myproject" or "myproject.com" as your developing url, it will give you the right system variables no matter what. This is very convenient when you are hosting your web live aswell.</p>
-				<br /><br /><br /><br />
 			</div>
 		</div>
 	</div>

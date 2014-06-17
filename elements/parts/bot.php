@@ -3,7 +3,7 @@
     <div class="container">
       <div class="crow">
         <div class="ws-12">
-          { <?=__('bot')?> }
+          <a href="<?=$app->url?>" class="link">{ <?=__('bot')?> }</a>
         </div>
       </div>
     </div>
