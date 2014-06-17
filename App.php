@@ -20,6 +20,8 @@ class App {
   public function __construct($includes = array(), $confdir = false) {
     if($confdir)
       $this::$confdir = $confdir;
+    else
+      $this::$confdir .= '/';
     
     $this->checkIfLive();
 
@@ -34,21 +36,19 @@ class App {
     }
 
     $config = array(
-      'localhost' => array(
-        'url' => $url,
-        'server_url' => $url,
-        'root' => __DIR__.'/',
-        'server_root' => __DIR__.'/'
-      ),
+      'url' => $url,
+      'server_url' => $url,
+      'root' => __DIR__.'/',
+      'server_root' => __DIR__.'/'
     );
 
     $parsed = $this->parseConfig();
-    
-    $config = array_merge($config, (array) $parsed);
+  
+    if(isset($parsed->{$this->env}))
+      $config = array_merge($config, (array) $parsed->{$this->env});
 
-    if(isset($config[$this->env]))
-      foreach($config[$this->env] as $key => $value)
-        $this->{$key} = $value;
+    foreach($config as $key => $value)
+      $this->{$key} = $value;
 
     if($includes)
       $this->includer($includes);
@@ -61,6 +61,7 @@ class App {
 
   public function parseConfig() {
     $file = $this::$confdir.$this::$conffile;
+    
     $config = array();
     if(file_exists($file))
       $config = json_decode($this->get($file));
