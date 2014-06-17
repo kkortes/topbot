@@ -1,31 +1,46 @@
-<div class="container">
-  <div class="crow">
-    <div class="ws-12">
-      <?=$app->get('breadcrumb')?>
+<div class="fullwidth">
+  <div class="container">
+    <div class="crow">
+      <div class="ws-12">
+        <h2>What is topbot?</h2>
+        <p>Topbot is a fully responsive no-style-theme and focuses on giving you the best possible start for a php web project.
+        </p>
+        <p>If you are about to start a project from scratch or just create some markup from a design you recieved - topbot is the perfect place to start.
+        </p>
+        <p>Get to know topbot! You won't regret it.
+        </p>
+        <a href="https://github.com/kkortes/topbot/archive/master.zip" class="btn btn-default">Download</a>
+        <hr />
 
-      <h2>What is topbot?</h2>
-      <p>
-      Topbot is the simplest yet best theme you will ever use. It's based on <a href="http://getbootstrap.com/" target="_blank">Twitter bootstrap</a> with the additions of { top }, { bot } and some <i>other stuff</i>.
-      </p>
-      <hr />
+        <h2>Philosophy</h2>
+        <p>All web projects have a shared denominator. In this theme I've taken all the similarities in every web project and put them together in a small, lightweight and easy to understand package.
+        </p>
+        <hr />
 
-      <h2>What is { top } / { bot }?</h2>
-      <p>
-      Top and bot are used for what you would call <i>header and footer</i>, but hold on! There's more to it. You can duplicated either one of them and it still looks great, they are not unique. This means they're independent but <strong>can</strong> still be used as header and footer (HTML5 <?=htmlspecialchars('<header>')?> and <?=htmlspecialchars('<footer>')?> may also be used if you want to be rebelish).
-      </p>
-      <hr />
+        <h2>Features</h2>
+        <ul>
+          <li><strong>New!</strong> App.php is now included. You can read more about it <a href="/app">here</a></li>
+          <li><strong>New!</strong> Topbot now includes <i>crow</i>! Crow is a grid css framework for awesome box alignment within rows. You can read more about crow <a href="/crow">here</a></li>
+          <li><strong>New!</strong> .htaccess added. Uses "smart-url" with the structure myweb.com/pagename/variable/value/variable2/value2?variable3=value3. Requires a virtual host to be set up for your local domain.</li>
+          <li>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a dummy image will pop up, <a href="/modules/module/sizes">like so</a></li>
+          <li>The scrollbar is always visible (check to the right), this prevents page from "sliding back and fourth" upon page navigation</li>
+          <li>Uses smart sticky footer, the contents of { bot } may be dynamic (normally you set a height for this to work properly)</li>
+        </ul>
+        <hr />
 
-      <h2>Other stuff</h2>
-      <ul>
-        <li><strong>New!</strong> Topbot now includes <i>crow</i>! Crow is a grid css framework for awesome box alignment within rows. You can read more about crow <a href="/crow">here</a></li>
-        <li><strong>New!</strong> .htaccess added! Of course possible to remove if not desired. Uses "smart"-url with the structure /topbot/pagename/variable/value/variable2/value2?variable3=value3 you can go as far as you like!</li>
-        <li>Uses LESS for CSS and Coffescript for JS</li>
-        <li>Try put a <?=htmlspecialchars('<img />')?> tag anywhere and watch the magic!</li>
-        <li>The scrollbar always shows (check to the right), this prevents page from "sliding back and fourth" upon page navigation</li>
-        <li>The theme uses smart sticky bot (footer) - the content of bot may be dynamic (normally you set a height for this to work properly)</li>
-        <li>The theme encurages you to build your web-application with dynamic modules rather than static elements. Web apps today should be responsive if possible - right?</li>
-        <li><a href="http://css3pie.com/" target="_blank">CSS3pie</a> is included by default, which means you can use rounded borders for non-supported browsers! (notice! for this to work you have to move the PIE-directory to your web root)</li>
-      </ul>
+        <h2>Instructions</h2>
+        <div class="crow no-gutter">
+          <div class="ws-3">
+            <?=$app->get('file-list')?>
+          </div>
+          <div class="ws-5 up">
+            <?=$app->get('file-instructions')?>
+          </div>
+          <div class="ws-4 up">
+            
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

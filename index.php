@@ -1,6 +1,6 @@
 <? 
-  include_once "core/App.php";
-  $app = new App(array('core/init', 'functions'), __DIR__.'/');
+  include_once "App.php";
+  $app = new App(array('functions'));
   
   $app->pointer = 'elements/';
   

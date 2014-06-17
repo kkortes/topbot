@@ -1,9 +1,7 @@
-<div class="fullwidth" style="background:url(<?=path()?>/crow-1.0/crow.png) no-repeat;background-size:cover;">
+<div class="fullwidth" style="background:url(<?=$app->url?>crow-1.0/crow.png) no-repeat;background-size:cover;">
   <div class="container">
     <div class="crow">
       <div class="ws-12">
-        <?=$app->get('breadcrumb')?>
-
         <h2>This is <span class="icon icon-crow"></span></h2>
         <p>
         <span class="icon icon-crow"></span> is <i>the grid framework</i> you want. It's made standalone which means you can apply to any of your current markup/web project.
@@ -22,13 +20,12 @@
           <li>Smart center-center alignment (if desired)</li>
           <li>No tables, no absolute positioning, no floats, no clearfix'es</li>
           <li>Supports responsive layouts by default</li>
-          <li>Nestable. Se what I did there? "Nest"-able ;)</li>
-          <li>Can be used for specific modules of you web, sliders, dot-navigation, side-by-side blocks - the only imagination is yourself!</li>
+          <li>Can be used for columns, sliders, dot-navigation, side-by-side blocks - the only imagination is yourself!</li>
         </ul>
 
         <h2>Downsides</h2>
         <ul>
-          <li>Not working properly for IE8 therefore <i>fly</i> functionality requires <a href="/index/page/crow-1.0/?download=crow-1.0/crow-ie.js">crow-ie.js</a>. Malfunction in IE could be seen as an upside, right? ;)</li>
+          <li><i>Fly</i> functionality is not working properly for IE8 therefore <a href="/index/page/crow-1.0/?download=crow-1.0/crow-ie.js">crow-ie.js</a> is required. Malfunction in IE could be seen as an upside, right? ;)</li>
         </ul>
 
         <h2>Setup</h2>

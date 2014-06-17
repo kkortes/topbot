@@ -109,8 +109,8 @@
 	}
 }
 .container {
-	width:960px;
-	margin:0 auto;
+	//width:960px;
+	//margin:0 auto;
 	padding:0 @gutter*1px;
 	> .crow {
 		margin:0 -@gutter*1px;
@@ -150,14 +150,14 @@
 @media (min-width: @screen-lg-min) {
 	// Notice: this is an example, you may change it
 	.container {
-		width:970px;
+		//width:970px;
 	}
 }
 // Tablet, both orientations
 @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
 	body {
 		.container {
-			width:750px;
+			//width:750px;
 		}
 
 		.container .crow > .crow {
@@ -183,7 +183,7 @@
 // Smartphone, both orientations
 @media (max-width: @screen-xs-max) {
   body {
-    .destroy-all();
+    //.destroy-all();
   }
 
   // Smartphone, vertical
@@ -202,7 +202,7 @@
 }
 
 
-/*
+
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
 @gray:                   lighten(#000, 33.5%); // #555
@@ -213,26 +213,28 @@
 body {
 	#wrapper {
 		.crow {
-			div {
-				background:@gray-lighter;
+			&.dev {
 				div {
-					background:darken(@gray-lighter, 10%);
+					background:@gray-lighter;
 					div {
-						background:darken(@gray-lighter, 20%);
+						background:darken(@gray-lighter, 10%);
 						div {
-							background:darken(@gray-lighter, 30%);
+							background:darken(@gray-lighter, 20%);
 							div {
-								background:darken(@gray-lighter, 40%);
+								background:darken(@gray-lighter, 30%);
 								div {
-									background:darken(@gray-lighter, 10%);
+									background:darken(@gray-lighter, 40%);
 									div {
-										background:darken(@gray-lighter, 20%);
+										background:darken(@gray-lighter, 10%);
 										div {
-											background:darken(@gray-lighter, 30%);
+											background:darken(@gray-lighter, 20%);
 											div {
-												background:darken(@gray-lighter, 40%);
+												background:darken(@gray-lighter, 30%);
 												div {
 													background:darken(@gray-lighter, 40%);
+													div {
+														background:darken(@gray-lighter, 40%);
+													}
 												}
 											}
 										}
@@ -246,4 +248,3 @@ body {
 		}
 	}
 }
-*/

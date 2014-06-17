@@ -15,17 +15,6 @@
     }
   }
 
-  // Replace all path() calls for what your framework/CMS uses or simply modify this function. Defaults to Wordpress.
-  if(!function_exists('path')) {
-    function path() {
-      global $app;
-      if(function_exists('get_bloginfo'))
-        return get_bloginfo('template_url');
-      else
-        return $app->url;
-    }
-  }
-
   // Placeholder for eventual translations
   if(!function_exists('__')) {
     function __($value = false) {

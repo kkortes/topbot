@@ -2,6 +2,20 @@
 	class Nostyle {
 	  static function getAll() {
 	  	return array(
+	  		'slider' => array(
+	  			'responsive' => array(
+	  				'',
+	  				array(
+							array(),
+							array(),
+							array(1,2,3,4,5),
+							array(),
+							array(),
+							array(),
+							array(),
+						)
+	  			),
+	  		),
 	  		'lists' => array(
 	  			'default' => array(
 	  				'',

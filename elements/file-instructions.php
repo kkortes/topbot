@@ -45,7 +45,7 @@
         'tests' => 'Don\'t mind this. I don\'t.',
       'less' => 'In here you\'ll find ALOT of .less\'es. Don\'t be scared, they are here to help you! All of them are from '.$links[0].' and can be included by changing the file "bootstrap.less".',
         'tests' => 'I told you! Don\'t mind the tests-directories! They are for no good!',
-      'stylecss' => 'Project defaults. This file makes the top-bot-magic possible. Just leave him alone and put all of your css in the script.coffee file found in /js.',
+      'stylecss' => 'Project defaults. This file makes the top-bot-magic possible. Just leave him alone and put all of your css in the style.less file found in /assets/less.',
   );
 ?>
 <div class="viewport">
