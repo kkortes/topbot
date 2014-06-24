@@ -6,7 +6,7 @@
         	<div class="clearfix">
             <?
             $crowurl = $app->url.'crow';
-            if($app->environment == 'live') {
+            if($app->env == 'live') {
               $crowurl = 'http://getcrow.eu';
             }
             ?>
