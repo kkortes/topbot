@@ -1,6 +1,6 @@
 <?
   $links = array(
-    '<a href="http://getbootstrap.com/" target="_blank">Twitter bootstrap</a>',
+    '',
     '<a href="http://css3pie.com/" target="_blank">CSS3 PIE</a>',
     '<a href="http://incident57.com/codekit/" target="_blank">CodeKit</a>'
   );
@@ -39,11 +39,11 @@
         'sprite' => 'Put any number of small .png\'s in here! Upon saving "sprity.scss" in your css-directory will autocreate a sprite image for you, meanwhile creating a sprity.css in your css-directory with all poiting coordinates to all the images within the sprite.',
         'sprite-x' => 'Same as sprite, but here you should use images that will repeat X-wise only. The largest width of any image in here, must be applied to all images in order for the sprite that genereates to look fancy.',
       'indexphp' => 'The master file of all files within topbot. Why? Take a look inside and see.',
-      'js' => 'Put all your js-scripts + js-libraries in here. You\'ll also find bootstrap default js\'s here. Remember to include them by your own since no one of them are included by default.',
+      'js' => 'Put all your js-scripts + js-libraries in here.',
         'scriptcoffee' => 'With '.$links[2].' this renders into script.js',
         'scriptjs' => 'Your default .js-file included in this project.',
         'tests' => 'Don\'t mind this. I don\'t.',
-      'less' => 'In here you\'ll find ALOT of .less\'es. Don\'t be scared, they are here to help you! All of them are from '.$links[0].' and can be included by changing the file "bootstrap.less".',
+      'less' => 'In here you\'ll find ALOT of .less\'es. Don\'t be scared, they are here to help you!',
         'tests' => 'I told you! Don\'t mind the tests-directories! They are for no good!',
       'stylecss' => 'Project defaults. This file makes the top-bot-magic possible. Just leave him alone and put all of your css in the style.less file found in /assets/less.',
   );

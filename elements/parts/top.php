@@ -11,7 +11,7 @@
             }
             ?>
 	        	<div class="pull-right">
-              Based on <a href="<?=$crowurl?>" class="icon icon-crow"></a> and <a href="http://getbootstrap.com/" target="_blank">Twitter bootstrap</a>
+              Based on <a href="<?=$crowurl?>" class="icon icon-crow text-black"></a> and <a href="http://getleaf.com/" class="icon icon-leaf text-green" target="_blank"></a>
             </div>
 
 	          <a href="<?=$app->url?>" class="link">{ <?=__('top')?> }</a>

@@ -1,3 +1,6 @@
+# @codekit-prepend "../../bower_components/leaf/js/libs/waves/waves.js"
+# @codekit-prepend "../../bower_components/leaf/coffee/script.coffee"
+
 $('img').each ->
   if !$(this).attr('src')
     $(this).attr('src', window.app_url+'assets/image/dummies/dummy-rectangular.jpg')
@@ -17,12 +20,3 @@ inspectFile = (obj) ->
   file = obj.attr('rel')
   $('.viewport div:not(.'+file+')').slideUp('fast')
   $('.viewport .'+file).slideDown('fast')
-
-getPlatform = () ->
-  return window.getComputedStyle(document.body,':before').getPropertyValue('content').replace(/'/g,'').replace(/"/g,'')
-
-$(window).resize ->
-  clearTimeout(window.counter)
-  window.counter = setTimeout ->
-    window.platform = getPlatform()
-  , 500
