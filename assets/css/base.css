@@ -1,6 +1,8 @@
 /*
  Base css file. The compiled .css from this file should be the only file included on your web
 */
+@import '../../bower_components/leaf/styl/../js/libs/waves/waves.css';
+@import '../../bower_components/leaf/styl/../fonts/icomoon/style.css';
 .fill-red {
   background-color: #e51c23;
 }

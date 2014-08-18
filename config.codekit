@@ -33,6 +33,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/css\/base.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/base.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/image\/dummies\/dummy-horizontal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1115,15 +1124,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/leaf\/css\/base.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/css\/base.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/bower_components\/leaf\/fonts\/icomoon\/demo-files\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -1227,21 +1227,6 @@
 		"outputAbbreviatedPath": "\/bower_components\/leaf\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/bower_components\/leaf\/styl\/base.styl": {
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/base.styl",
-		"outputAbbreviatedPath": "\/bower_components\/leaf\/css\/base.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
 		},
 	"\/bower_components\/leaf\/styl\/colors\/amber.styl": {
 		"debugStyle": 0,
@@ -1633,21 +1618,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
-	"\/bower_components\/leaf\/styl\/components\/list-item.styl": {
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/components\/list-item.styl",
-		"outputAbbreviatedPath": "\/bower_components\/leaf\/styl\/css\/list-item.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
 	"\/bower_components\/leaf\/styl\/components\/modal.styl": {
 		"debugStyle": 0,
 		"fileType": 8,
@@ -1836,51 +1806,6 @@
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/style-desktop.styl",
 		"outputAbbreviatedPath": "\/bower_components\/leaf\/css\/style-desktop.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
-	"\/bower_components\/leaf\/styl\/style-mobile.styl": {
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/style-mobile.styl",
-		"outputAbbreviatedPath": "\/bower_components\/leaf\/css\/style-mobile.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
-	"\/bower_components\/leaf\/styl\/style-tablet.styl": {
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/style-tablet.styl",
-		"outputAbbreviatedPath": "\/bower_components\/leaf\/css\/style-tablet.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
-		},
-	"\/bower_components\/leaf\/styl\/style.styl": {
-		"debugStyle": 0,
-		"fileType": 8,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
-		"inputAbbreviatedPath": "\/bower_components\/leaf\/styl\/style.styl",
-		"outputAbbreviatedPath": "\/bower_components\/leaf\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
