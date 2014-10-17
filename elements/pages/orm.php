@@ -11,10 +11,11 @@
   //   )
   // );
 
-  $sobject = (new MysqlObject('nano_user'))->select()->offset(1)->query(true);
-  echo $sobject->superadmin->images->{'34690.png'}->test_relation->title = 'Hej Kompis';
+  $sobject = (new SObject('nano_user'))->select()->offset(1)->fetch(true);
   
-  $sobject->save();
+  $sobject->superadmin->images->{'27513.png'}->file_type = 'asd';
+  
+  var_dump($sobject);
 
   
 ?>
