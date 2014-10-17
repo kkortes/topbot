@@ -9,7 +9,7 @@
         </p>
         <p>Get to know topbot! You won't regret it.
         </p>
-        <a href="https://github.com/kkortes/topbot/archive/master.zip" class="button waves-effect"><i class="icon icon-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;Github</a>
+        <a href="https://github.com/kkortes/topbot" class="button waves-effect"><i class="icon icon-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;Github</a>
 
         <h2>Philosophy</h2>
         <p>All web projects have a shared denominator. In this theme I've taken all the similarities in every web project and put them together in a small, lightweight and easy to understand package.
@@ -19,8 +19,8 @@
         <h2>Features</h2>
         <ul>
           <li><strong>New!</strong> Topbot now includes <i class="icon icon-leaf text-green"></i>. Leaf is a CSS framework based on <a href="http://google.com/spec/design" target="_blank">Google's material design</a>.</li>
-          <li><strong>New!</strong> App.php is now included. You can read more about it <a href="/app">here</a></li>
-          <li><strong>New!</strong> .htaccess added. Uses "smart-url" with the structure myweb.com/pagename/variable/value/variable2/value2?variable3=value3. Requires a virtual host to be set up for your local domain.</li>
+          <li>App.php is now included. You can read more about it <a href="/app">here</a></li>
+          <li>.htaccess added. Uses "smart-url" with the structure myweb.com/pagename/variable/value/variable2/value2?variable3=value3. Requires a virtual host to be set up for your local domain.</li>
           <li>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a dummy image will pop up, <a href="/modules/module/sizes">like so</a></li>
           <li>The scrollbar is always visible (check to the right), this prevents page from "sliding back and fourth" upon page navigation</li>
           <li>Uses smart sticky footer, the contents of { bot } may be dynamic (normally you set a height for this to work properly)</li>
