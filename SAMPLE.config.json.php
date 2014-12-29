@@ -1,7 +1,8 @@
 <?
 /*
-  Remove SAMPLE. from my name
+  Remove SAMPLE. from my name and put me in project root
 */
+
 $url = $_SERVER['PHP_SELF'];
 if(strpos($url, '.php')) {
   $url = explode('.php', $url);
