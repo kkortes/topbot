@@ -3,6 +3,6 @@
 /core
 config.json.php
 bower_components/leaf-css-framework
-nano
+/nano
 elements/pages/orm.php
 uploads
