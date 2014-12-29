@@ -1,5 +1,5 @@
-# @codekit-prepend "../../bower_components/leaf/js/libs/waves/waves.js"
-# @codekit-prepend "../../bower_components/leaf/coffee/script.coffee"
+# @codekit-prepend "../../bower_components/leaf-css-framework/js/libs/Waves-master/dist/waves.js"
+# @codekit-prepend "../../bower_components/leaf-css-framework/coffee/script.coffee"
 
 $('img').each ->
   if !$(this).attr('src')
