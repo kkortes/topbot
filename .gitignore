@@ -1,8 +1,7 @@
 */.DS_Store
 .DS_Store
-/core
 config.json.php
 bower_components/leaf-css-framework
-/nano
-elements/pages/orm.php
 uploads
+core
+nano
