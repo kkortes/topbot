@@ -4,6 +4,7 @@ body
   line-height: $line-height
   color: $text-color
   background-color: $bg-color
+  background-image: url('../image/topbot.png')
   smooth-font()
   &:before
     position:fixed
@@ -23,6 +24,7 @@ h1
 h2
   font-size:20px
   line-height:30px
+  font-weight: normal
 h3
   font-size:16px
   line-height:24px
@@ -60,16 +62,14 @@ hr
   .fullwidth
     height:100%
     padding-bottom:50px
-header,
-.top
-  .fullwidth
-    border-bottom:1px solid $weak-color
-footer
-.bot
-  .fullwidth
-    border-top:1px solid $weak-color
 
 // Topbot specifics, remove everything below this line
+.page-index
+  .keep-alive
+    i
+      font-size: 40px
+    span
+      font-size: 70px
 img
   width:100%
 a

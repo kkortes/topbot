@@ -11,21 +11,17 @@
             }
             ?>
 	        	<div class="pull-right">
-              Based on <a href="<?=$crowurl?>" class="icon icon-crow text-black"></a> and <a href="http://getleaf.com/" class="icon icon-leaf text-green" target="_blank"></a>
+              Topbot theme by <a href="http://twitter.com/kortekim" target="_blank">@kortekim</a>
             </div>
 
 	          <a href="<?=$app->url?>" class="link">{ <?=__('top')?> }</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="top">
-  <div class="container">
-    <div class="crow">
-      <div class="ws-12">
-        <?=$app->get('parts/nav')?>
+      <div class="crow">
+        <div class="ws-12">
+          <?=$app->get('parts/nav')?>
+        </div>
       </div>
     </div>
   </div>
