@@ -42,35 +42,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/image\/dummies\/dummy-horizontal.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 204192,
-		"inputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-horizontal.jpg",
-		"outputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-horizontal.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/image\/dummies\/dummy-rectangular.jpg": {
+	"\/assets\/image\/placeholder\/default.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 267031,
-		"inputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-rectangular.jpg",
-		"outputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-rectangular.jpg",
+		"inputAbbreviatedPath": "\/assets\/image\/placeholder\/default.jpg",
+		"outputAbbreviatedPath": "\/assets\/image\/placeholder\/default.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/image\/dummies\/dummy-vertical.jpg": {
+	"\/assets\/image\/placeholder\/landscape.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204192,
+		"inputAbbreviatedPath": "\/assets\/image\/placeholder\/landscape.jpg",
+		"outputAbbreviatedPath": "\/assets\/image\/placeholder\/landscape.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/image\/placeholder\/portrait.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 206442,
-		"inputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-vertical.jpg",
-		"outputAbbreviatedPath": "\/assets\/image\/dummies\/dummy-vertical.jpg",
+		"inputAbbreviatedPath": "\/assets\/image\/placeholder\/portrait.jpg",
+		"outputAbbreviatedPath": "\/assets\/image\/placeholder\/portrait.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1128,6 +1128,19 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/bower_components\/leaf-css-framework\/coffee\/script.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/coffee\/script.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/js\/script.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/leaf-css-framework\/css\/base.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -1369,6 +1382,17 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/bower_components\/leaf-css-framework\/js\/script.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/js\/script.js",
+		"outputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/js\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/bower_components\/leaf-css-framework\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -2151,6 +2175,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/crow-1.0\/crow.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/crow-1.0\/crow.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/crow-1.0\/crow.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2162,26 +2195,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/crow-1.0\/crow.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/crow-1.0\/crow.less",
-		"outputAbbreviatedPath": "\/css\/crow.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/crow-1.0\/crow.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2192,6 +2205,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/crow-1.0\/crow.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/crow-1.0\/crow.styl",
+		"outputAbbreviatedPath": "\/css\/crow.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
 		},
 	"\/crow-1.0\/icomoon\/demo-files\/demo.css": {
 		"fileType": 16,
@@ -2299,15 +2328,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/elements\/pages\/modules.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/elements\/pages\/playground.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/elements\/pages\/playground.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

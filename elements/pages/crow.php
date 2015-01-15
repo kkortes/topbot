@@ -1,44 +1,34 @@
-<div class="fullwidth" style="background:url(<?=$app->url?>crow-1.0/crow.png) no-repeat;background-size:cover;">
+<div class="fullwidth" style="background:url(<?=$app->url?>crow-1.0/crow.png) no-repeat;background-size:auto 100%; background-position: top right;">
   <div class="container">
     <div class="crow">
       <div class="ws-12">
-        <h2>This is <span class="icon icon-crow"></span></h2>
+        <h1><span class="icon icon-crow"></span> - <span class="small">the <i>smart</i> grid framework</span></h1>
         <p>
-        <span class="icon icon-crow"></span> is <i>the grid framework</i> you want. It's made standalone which means you can apply to any of your current markup/web project.
+        Crow is made standalone which means you can apply to any of your current markup/web project.
         </p>
 
-        <h2>The goal</h2>
-        <p>
-        Ever thought of a grid framework that automatically sets your widths (percentually) of elements? <span class="icon icon-crow"></span> does that.<br />
-        Ever easly wanted to align elements center-center? <span class="icon icon-crow"></span> does that.
-        </p>
-
-        <h2>Upsides</h2>
+        <h2>Features</h2>
         <ul>
-          <li>Uses less and less classes than any other grid framework</li>
-          <li>Works in all modern browsers, smartphones, tablets AND IE8+</li>
-          <li>Smart center-center alignment (if desired)</li>
           <li>No tables, no absolute positioning, no floats, no clearfix'es</li>
-          <li>Supports responsive layouts by default</li>
+          <li><i>Fly</i> functionality automatically sets widths of child elements</li>
+          <li>Works in all modern browsers, smartphones, tablets and IE8+</li>
+          <li>Smart center-center alignment (if desired)</li>
+          <li>Responsive and configurable</li>
+          <li><i>Fly</i> functionality is not working properly for IE8 therefore <a href="/index/page/crow-1.0/?download=crow-1.0/crow-ie.js">crow-ie.js</a> is required</li>
           <li>Can be used for columns, sliders, dot-navigation, side-by-side blocks - the only imagination is yourself!</li>
-        </ul>
-
-        <h2>Downsides</h2>
-        <ul>
-          <li><i>Fly</i> functionality is not working properly for IE8 therefore <a href="/index/page/crow-1.0/?download=crow-1.0/crow-ie.js">crow-ie.js</a> is required. Malfunction in IE could be seen as an upside, right? ;)</li>
         </ul>
 
         <h2>Setup</h2>
         <ul>
           <li><a href="<?=$app->url?>?download=assets/css/crow.css">Download <span class="icon icon-crow"></span>.css</a> or 
-          <a href="<?=$app->url?>?download=crow-1.0/crow.less">download <span class="icon icon-crow"></span>.less</a>
+          <a href="<?=$app->url?>?download=crow-1.0/crow.styl">download <span class="icon icon-crow"></span>.styl</a>
             <?/*or embed it directly through this API-url (http://cdn.crow.com)*/?></li>
           <li>Crow is just a regular .css-file, include in in your <?=htmlspecialchars('<head>')?>-tag and you are ready to go!</li>
         </ul>
 
         <h2>How to use</h2>
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div>')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div>')?>2<?=htmlspecialchars('</div>')?><br />
@@ -54,7 +44,7 @@
 
         <br /><br />
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="ws-2">')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="ws-8">')?>2<?=htmlspecialchars('</div>')?><br />
@@ -70,7 +60,7 @@
 
         <br /><br />
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="w-35">')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="w-50">')?>2<?=htmlspecialchars('</div>')?><br />
@@ -86,7 +76,7 @@
 
         <br /><br />
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow no-gutter">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="w-35">')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="w-50">')?>2<?=htmlspecialchars('</div>')?><br />
@@ -102,7 +92,7 @@
 
         <br /><br />
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow fly">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div>')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div>')?>2<?=htmlspecialchars('</div>')?><br />
@@ -118,7 +108,7 @@
 
         <br /><br />
 
-        <code style="display:inline-block;">
+        <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
           <?=htmlspecialchars('<div class="crow fly" style="height:100px;">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div>')?>1<?=htmlspecialchars('</div>')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<div class="down">')?>2<?=htmlspecialchars('</div>')?><br />

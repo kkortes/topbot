@@ -7,7 +7,6 @@
     $filename = end($filename);
 
     $url = $app->server_root.$_GET['download'];
-    
     if(is_file($url)) {
       header("Content-Type: application/octet-stream");
       header("Content-Transfer-Encoding: Binary");

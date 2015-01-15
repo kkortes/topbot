@@ -11,7 +11,7 @@
             }
             ?>
 	        	<div class="pull-right">
-              Topbot theme by <a href="http://twitter.com/kortekim" target="_blank">@kortekim</a>
+              Built with <a href="<?=$crowurl?>" class="icon icon-crow text-black"></a> and <a href="http://getleaf.com" target="_blank" class="icon icon-leaf text-green"></a>
             </div>
 
 	          <a href="<?=$app->url?>" class="link">{ <?=__('top')?> }</a>

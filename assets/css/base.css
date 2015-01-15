@@ -2496,7 +2496,7 @@ input[type=submit]:disabled:active {
 }
 .button.text:hover {
   background: none;
-  color: #4dd0e1;
+  color: #90a4ae;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3192,11 +3192,11 @@ body {
   background-color: #fafafa;
 }
 a {
-  color: #00bcd4;
+  color: #607d8b;
   text-decoration: none;
 }
 a:hover {
-  color: #4dd0e1;
+  color: #90a4ae;
   text-decoration: underline;
 }
 hr {
@@ -3230,7 +3230,7 @@ ul {
 .mod-row .mod {
   padding: 2.5px;
 }
-body {
+body:not(.page-modules) {
   background-image: url("../image/topbot.png");
 }
 body:before {
