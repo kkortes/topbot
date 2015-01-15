@@ -1,87 +1,27 @@
 body
-  font-family: $font-family
-  font-size: $font-size
-  line-height: $line-height
-  color: $text-color
-  background-color: $bg-color
   background-image: url('../image/topbot.png')
-  smooth-font()
-  &:before
-    position:fixed
-    visibility:hidden
-    *display:none
-.show-on-mobile
-  display:none
-a
-  color: $link-color
-  text-decoration: none
-  &:hover
-    color: $link-hover-color
-    text-decoration: underline
-h1
-  font-size:34px
-  line-height:51px
-h2
-  font-size:20px
-  line-height:30px
-  font-weight: normal
-h3
-  font-size:16px
-  line-height:24px
-h4
-  font-size:14px
-  line-height:21px
-h5
-  font-size:12px
-  line-height:18px
-img
-  max-width:100%
-#wrapper
-  position:relative
-  .fullwidth
-    height:100%
-hr
-  border:0
-  border-bottom:1px solid $weak-color
-.small
-  small()
-.large
-  large()
-.base-padding
-  base-padding()
-.strong-padding
-  strong-padding()
-.spacer
-  height:40px
-  &.half
-    height:20px
-  &.quarter
-    height:10px
-
-#wrapper
-  .fullwidth
-    height:100%
-    padding-bottom:50px
-
+    
 // Topbot specifics, remove everything below this line
+.show-smartphone
+  display: none
 .page-index
+  h2
+    font-weight: normal
   .keep-alive
     i
       font-size: 40px
     span
       font-size: 70px
-img
-  width:100%
 a
   &.link
     color:$main-color
 .top
   a
     &:hover
-      text-decoration:none
+      text-decoration: none
 code
-  word-break:break-all;
-  white-space:normal;
+  word-break: break-all
+  white-space: normal
 ul
   li
     word-break:break-word
@@ -96,14 +36,3 @@ ul
         padding:10px 20px
         &.active
           background:$weak-color
-  &.file-list
-    list-style:none
-    padding-left:10px
-    .directory
-      font-weight:bold
-      &:hover
-        cursor:pointer
-    ul
-      display:none
-      list-style:none
-      padding-left:10px
