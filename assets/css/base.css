@@ -2,7 +2,7 @@
  Base css file. The compiled .css from this file should be the only file included on your web
 */
 @import '../../bower_components/leaf-css-framework/styl/../js/libs/Waves-master/dist/waves.css';
-@import '../../bower_components/leaf-css-framework/styl/../fonts/icomoon/style.css';
+@import "../icomoon/style.css";
 .bg-red {
   background-color: #e51c23;
 }
@@ -2496,7 +2496,7 @@ input[type=submit]:disabled:active {
 }
 .button.text:hover {
   background: none;
-  color: #90a4ae;
+  color: #4dd0e1;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3192,11 +3192,11 @@ body {
   background-color: #fafafa;
 }
 a {
-  color: #607d8b;
+  color: #00bcd4;
   text-decoration: none;
 }
 a:hover {
-  color: #90a4ae;
+  color: #4dd0e1;
   text-decoration: underline;
 }
 hr {
@@ -3229,6 +3229,69 @@ ul {
 }
 .mod-row .mod {
   padding: 2.5px;
+}
+.menu {
+  background: #000;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.menu svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.menu svg g path {
+  fill: transparent;
+  -webkit-transition: stroke-width 0.25s ease;
+  -moz-transition: stroke-width 0.25s ease;
+  -o-transition: stroke-width 0.25s ease;
+  -ms-transition: stroke-width 0.25s ease;
+  transition: stroke-width 0.25s ease;
+}
+.menu svg g.active path {
+  fill: #fff;
+}
+.menu svg polygon {
+  stroke: #fff;
+  stroke-width: 0.5;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.menu.transform svg {
+  margin-top: -100px;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+}
+.menu.transform svg g path:last-child {
+  fill: #fff;
+}
+.menu.transform svg g:hover {
+  cursor: pointer;
+}
+.menu.transform svg g:hover path:first-child {
+  fill: #bcbdc0;
+  stroke-width: 0.25;
+  stroke: #fff;
+}
+.menu.transform svg g:hover path:last-child {
+  fill: none;
+}
+.menu.transform svg polygon {
+  stroke-width: 0.25;
 }
 body:not(.page-modules) {
   background-image: url("../image/topbot.png");

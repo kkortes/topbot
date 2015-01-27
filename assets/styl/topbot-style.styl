@@ -1,3 +1,49 @@
+.menu
+  background: #000
+  width: 200px
+  height: 200px
+  position: relative
+  svg
+    position: absolute
+    top: 50%
+    margin-top: -50px
+    left: 50%
+    margin-left: -50px
+    width: 100px
+    height: 100px
+    transition: all .25s ease
+    g
+      path
+        fill: transparent
+        transition: stroke-width .25s ease
+      &.active
+        path
+          fill: #fff
+    polygon
+      stroke: #fff
+      stroke-width: .5
+      transition: all .25s ease
+  &.transform
+    svg
+      margin-top: -100px
+      margin-left: -100px
+      width: 200px
+      height: 200px
+      g
+        path
+          &:last-child
+            fill: #fff
+        &:hover
+          cursor: pointer
+          path
+            &:first-child
+              fill: #bcbdc0
+              stroke-width: .25
+              stroke: #fff
+            &:last-child
+              fill: none
+      polygon
+        stroke-width: .25
 body
   &:not(.page-modules)
     background-image: url('../image/topbot.png')
