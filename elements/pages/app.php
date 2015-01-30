@@ -1,5 +1,5 @@
 <div class="fullwidth">
-	<div class="container">
+	<div class="nest">
 	  <div class="crow">
 	    <div class="ws-12">
 				<h2>Explanation of <i>App.php</i></h2>

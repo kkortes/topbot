@@ -16,6 +16,7 @@ class App {
   public $root = null;
   public $server_root = null;
   public $pointer = null;
+  public $htmlbuffer = '';
 
   public function __construct($includes = array(), $confdir = false) {
     if($confdir)
@@ -69,7 +70,8 @@ class App {
     return $config;
   }
 
-  public function get($path, $variablesx = array()) {
+  public function get($path, $variablesx = array()) {  
+  
     $path = $this->pointer.$path;
     
     if(!strpos($path, '.php'))
@@ -86,7 +88,11 @@ class App {
     include $path;
 
     $output = ob_get_clean();
-    
+
+    $backtrace = debug_backtrace();
+    if($backtrace[0]['file'] == $app->server_root.'index.php')
+      $this->htmlbuffer .= "<!-- Start ".$path." -->\n".$output."\n<!-- End ".$path." -->\n";
+
     return $output;
   }
 

@@ -1,5 +1,5 @@
 <div class="fullwidth" style="height:100%;">
-	<div class="container" style="height:100%;">
+	<div class="nest" style="height:100%;">
 		<div class="crow">
 			<div class="ws-12">
 				<h2>Philosophy</h2>

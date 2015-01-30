@@ -1,5 +1,5 @@
 <div class="fullwidth" style="background:url(<?=$app->url?>crow-1.0/crow.png) no-repeat;background-size:auto 100%; background-position: top right;">
-  <div class="container">
+  <div class="nest">
     <div class="crow">
       <div class="ws-12">
         <h1><span class="icon icon-crow"></span> - <span class="small">the <i>smart</i> grid framework</span></h1>

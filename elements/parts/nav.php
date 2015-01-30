@@ -13,6 +13,7 @@
         if($page[0] == 'modules') continue;
         if($page[0] == 'crow') continue;
         if($page[0] == 'index') continue;
+        if($page[0] == 'snap') continue;
 
         $class = '';
         if(isset($_GET['page']) && $page[0] == $_GET['page']) {

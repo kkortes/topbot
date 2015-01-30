@@ -1,7 +1,7 @@
 <div class="fullwidth" style="height:100%;">
-  <div class="container flip onclick" style="height:100%;">
+  <div class="nest flip onclick" style="height:100%;">
     <div class="front" style="height:100%;">
-      <div class="crow">
+      <div class="crow" style="height:100%;">
         <div class="ws-12">
           <div class="crow keep-alive">
             <div>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="back" style="height:100%;">
-      <div class="crow">
+      <div class="crow" style="height:100%;">
         <div class="ws-2"></div>
         <div class="ws-8">
           <h1>Today is <?=date('d')?> of <?=date('F Y')?></h1>

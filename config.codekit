@@ -42,44 +42,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/icomoon\/demo-files\/demo.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/icomoon\/demo-files\/demo.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/icomoon\/demo-files\/demo.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/icomoon\/demo-files\/demo.js",
-		"outputAbbreviatedPath": "\/assets\/icomoon\/demo-files\/min\/demo-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/icomoon\/demo.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/icomoon\/demo.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/icomoon\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/icomoon\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/image\/placeholder\/default.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2318,7 +2280,7 @@
 	"\/bower_components\/leaf-css-framework\/coffee\/script.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/coffee\/script.coffee",
 		"minifyOutput": 1,
@@ -2397,7 +2359,7 @@
 		},
 	"\/bower_components\/leaf-css-framework\/js\/libs\/Waves-master\/dist\/waves.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/js\/libs\/Waves-master\/dist\/waves.js",
 		"outputAbbreviatedPath": "\/bower_components\/leaf-css-framework\/js\/libs\/Waves-master\/dist\/min\/waves-min.js",
@@ -3597,7 +3559,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "kortes",
+"lastSavedByUser": "Kim Korte",
 "manualImportLinks": {
 	},
 "projectAttributes": {
