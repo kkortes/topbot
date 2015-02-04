@@ -1,0 +1,15 @@
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) and (orientation: portrait) {
+  body:before {
+    content: 'tablet vertical';
+  }
+}
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) and (orientation: landscape) {
+  body:before {
+    content: 'tablet horizontal';
+  }
+}

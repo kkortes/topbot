@@ -1,6 +1,6 @@
 <div class="top">
   <div class="fullwidth">
-    <div class="container">
+    <div class="nest">
       <div class="crow">
         <div class="ws-12">
         	<div class="clearfix">

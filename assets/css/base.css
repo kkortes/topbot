@@ -1629,7 +1629,7 @@ ul.inline > li {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 html,
 body {
@@ -1642,6 +1642,7 @@ body {
 }
 html {
   overflow-y: scroll;
+  box-sizing: border-box;
 }
 footer,
 .bot,
@@ -1657,9 +1658,15 @@ header,
 }
 .crow {
   padding: 0 15px;
+  text-align: center;
   font-size: 0;
   line-height: 0;
-  text-align: center;
+  line-height: 0;
+}
+.crow .crow {
+  font-size: 0;
+  line-height: 0;
+  line-height: 0;
 }
 .crow:before {
   content: '';
@@ -1669,12 +1676,14 @@ header,
 }
 .crow > * {
   vertical-align: middle;
-  font-size: 14px;
-  line-height: 14px;
-  line-height: 1.4rem;
-  font-size: 1.4rem;
   display: inline-block;
   text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 16px;
+  line-height: 1.6rem;
 }
 .crow .w-1 {
   width: 1%;
@@ -2094,38 +2103,10 @@ header,
   body .nest {
     width: 750px;
   }
-  body .nest .crow > .crow.crow,
-  body .nest .crow > .crow.crow.fly {
-    height: auto;
-  }
-  body .nest .crow > .crow.crow > *,
-  body .nest .crow > .crow.crow.fly > * {
-    display: block;
-    width: 100%;
-  }
-  body .nest .crow > .crow.crow:before,
-  body .nest .crow > .crow.crow.fly:before {
-    content: '';
-    display: none;
-  }
 }
 @media (max-width: 767px) {
   body .nest {
     width: auto;
-  }
-  body .crow:not(.keep-alive).crow,
-  body .crow:not(.keep-alive).crow.fly {
-    height: auto;
-  }
-  body .crow:not(.keep-alive).crow > *,
-  body .crow:not(.keep-alive).crow.fly > * {
-    display: block;
-    width: 100%;
-  }
-  body .crow:not(.keep-alive).crow:before,
-  body .crow:not(.keep-alive).crow.fly:before {
-    content: '';
-    display: none;
   }
 }
 input[type=text],
@@ -3243,69 +3224,6 @@ ul {
 .mod-row .mod {
   padding: 2.5px;
 }
-.menu {
-  background: #000;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-.menu svg {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  left: 50%;
-  margin-left: -50px;
-  width: 100px;
-  height: 100px;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-.menu svg g path {
-  fill: transparent;
-  -webkit-transition: stroke-width 0.25s ease;
-  -moz-transition: stroke-width 0.25s ease;
-  -o-transition: stroke-width 0.25s ease;
-  -ms-transition: stroke-width 0.25s ease;
-  transition: stroke-width 0.25s ease;
-}
-.menu svg g.active path {
-  fill: #fff;
-}
-.menu svg polygon {
-  stroke: #fff;
-  stroke-width: 0.5;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-.menu.transform svg {
-  margin-top: -100px;
-  margin-left: -100px;
-  width: 200px;
-  height: 200px;
-}
-.menu.transform svg g path:last-child {
-  fill: #fff;
-}
-.menu.transform svg g:hover {
-  cursor: pointer;
-}
-.menu.transform svg g:hover path:first-child {
-  fill: #bcbdc0;
-  stroke-width: 0.25;
-  stroke: #fff;
-}
-.menu.transform svg g:hover path:last-child {
-  fill: none;
-}
-.menu.transform svg polygon {
-  stroke-width: 0.25;
-}
 body:not(.page-modules) {
   background-image: url("../image/topbot.png");
 }
@@ -3360,35 +3278,4 @@ ul.nav li strong {
 ul.nav li a.active,
 ul.nav li strong.active {
   background: #cfd8dc;
-}
-@media (min-width: 1200px) {
-  body:before {
-    content: 'desktop';
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
-  body:before {
-    content: 'tablet vertical';
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
-  body:before {
-    content: 'tablet horizontal';
-  }
-}
-@media (max-width: 767px) {
-  html {
-    font-size: 50%;
-    line-height: 50%;
-  }
-}
-@media (max-width: 767px) and (orientation: portrait) {
-  body:before {
-    content: 'smartphone vertical';
-  }
-}
-@media (max-width: 767px) and (orientation: landscape) {
-  body:before {
-    content: 'smartphone horizontal';
-  }
 }
