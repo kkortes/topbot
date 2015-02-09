@@ -7,8 +7,8 @@
     </div>
 
     <div class="crow">
-      <div class="ws-2">
-        <a href="https://github.com/kkortes/topbot" target="_blank" class="button text-white bg-blue-grey">Github</a>
+      <div class="ws-3">
+        <a href="https://github.com/kkortes/topbot" target="_blank" class="button text-white bg-blue-grey" style="text-transform: none;"><span class="icon icon-github"></span>&nbsp;&nbsp;Download</a>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@
           </li>
           <li class="ws-4">
             <h2>Sticky footer</h2>
-            Sticky footer the way it should be. { bot } can contain any amount of information.
+            Sticky footer the way it should be. <br />{ bot } can contain any amount of information.
           </li>
         </ul>
       </div>
