@@ -45,6 +45,11 @@ module.exports = (grunt) ->
         files: ['./assets/styl/*.styl']
         tasks: ['stylus:app']
 
+    notify_hooks:
+      options:
+        enabled: true,
+        success: true
+
   # These plugins provide necessary tasks.
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
@@ -53,6 +58,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-imagemin'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
+  grunt.loadNpmTasks 'grunt-notify';
   # Default task.
   grunt.registerTask 'default', ['coffee', 'stylus:app', 'uglify:app', 'watch']
   grunt.registerTask 'dist', ['coffee', 'stylus:app', 'uglify:dist', 'uglify:dist']
+
+  grunt.task.run 'notify_hooks'
