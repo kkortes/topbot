@@ -1,0 +1,33 @@
+{
+  "name": "topbot",
+  "version": "1.0.0",
+  "description": "topbot",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkortes/topbot.git"
+  },
+  "author": "Kim Korte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkortes/topbot/issues"
+  },
+  "homepage": "https://github.com/kkortes/topbot"
+}

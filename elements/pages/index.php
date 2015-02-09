@@ -8,7 +8,7 @@
 
     <div class="crow">
       <div class="ws-2">
-        <a href="https://github.com/kkortes/topbot"  target="_blank" class="button text-white bg-blue-grey">Github</a>
+        <a href="https://github.com/kkortes/topbot" target="_blank" class="button text-white bg-blue-grey">Github</a>
       </div>
     </div>
   </div>
