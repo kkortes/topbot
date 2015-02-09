@@ -10,13 +10,29 @@ body
 .show-smartphone
   display: none
 .page-index
-  h2
-    font-weight: normal
-  .keep-alive
-    i
-      font-size: 40px
-    span
-      font-size: 70px
+  #wrapper
+    font-size: 250%
+    line-height: 100%
+    .fullwidth
+      padding: 25px 0
+      &:first-child
+        padding: 100px 0
+        border-bottom: 10px solid get-blue-grey(900)
+        .button
+          width: 100%
+          text-align: center
+          &:hover
+            background: get-blue-grey(400)
+    h1
+      font-weight: normal
+    .keep-alive
+      i
+        font-size: 40px
+      a
+        font-size: 70px
+        &:hover
+          text-decoration: none
+        
 a
   &.link
     color:$main-color
@@ -29,15 +45,15 @@ code
   white-space: normal
 ul
   li
-    word-break:break-word
+    word-break: break-word
   &.nav
-    width:100%
-    margin:0
+    width: 100%
+    margin: 0
     li
-      padding:0;
+      padding: 0
       a,
       strong
-        display:block
-        padding:10px 20px
+        display: block
+        padding: 10px 20px
         &.active
           background: $weak-color

@@ -1,5 +1,5 @@
     </div>
-    <?//=$app->get('parts/bot')?>
+    <?=$app->get('parts/bot')?>
 
     <script src="<?=$app->url?>bower_components/jquery/dist/jquery.min.js"></script>
     <script>window.app_url = '<?=$app->url?>'</script>

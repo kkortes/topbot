@@ -151,12 +151,12 @@
         <br /><br />
 
         <code class="inline-block bg-red bg-minus-5 text-red text-plus-2">
-          <?=htmlspecialchars('<div class="crow">')?><br />
+          <?=htmlspecialchars('<div class="crow" style="background:white; height:400px;">')?><br />
           &nbsp;&nbsp;<?=htmlspecialchars('<img src="crow.jpg" alt="" />')?><br />
           <?=htmlspecialchars('</div>')?>
         </code>
         <br /><br />makes<br /><br />
-        <div class="crow" style="background:white;">
+        <div class="crow" style="background:white; height:400px;">
           <img src="<?=$app->url?>crow-2.0/crow.jpg" alt="" width="300" />
         </div>
 
