@@ -1,9 +1,11 @@
 <div class="fullwidth bg-blue-grey bg-plus-3 text-white">
   <div class="nest">
     <div class="text-center">
-      <h1>Topbot</h1>
-      <p>A minimalist no-style-theme.
+      <h1>{ topbot }</h1>
+      <div class="spacer quarter"></div>
+      <p>A minimalistic PHP no-style-theme starter kit.
       </p>
+      <div class="spacer half"></div>
     </div>
 
     <div class="crow">
