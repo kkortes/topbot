@@ -24,7 +24,7 @@
     }
   }
 
-  // Placeholder for eventual translations
+  // Placeholder for possible translations
   if(!function_exists('__')) {
     function __($value = false) {
       return $value;

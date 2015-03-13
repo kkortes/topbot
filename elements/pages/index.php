@@ -22,11 +22,11 @@
         <ul class="inline crow up">
           <li class="ws-4">
             <h2>Leaf CSS Framework</h2>
-            <i class="icon icon-leaf text-green"></i> is a CSS framework based on <a href="http://google.com/design/spec/material-design" target="_blank">Google's material design</a>.
+            <i class="icon icon-leaf text-green"></i> is a CSS framework based on <a href="http://google.com/design/spec/material-design" target="_blank">Google's material design</a>, you can check it out <a href="http://getleaf.com" target="_blank">here</a>.
           </li>
           <li class="ws-4">
             <h2>Crow Grid Framework</h2>
-            <i class="icon icon-crow text-black"></i> is a CSS grid framework. You can read more about it <a href="/crow">here</a>.
+            <i class="icon icon-crow text-black"></i> is a smart CSS grid framework. You can check it out <a href="http://getcrow.eu" target="_blank">here</a>.
           </li>
           <li class="ws-4">
             <h2>App.php</h2>

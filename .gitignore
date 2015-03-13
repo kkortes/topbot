@@ -1,9 +1,9 @@
+bower_components/leaf-css-framework
+config.json.php
+.codekit-cache
+node_modules
 */.DS_Store
 .DS_Store
-config.json.php
-bower_components/leaf-css-framework
 uploads
 core
 nano
-.codekit-cache
-node_modules

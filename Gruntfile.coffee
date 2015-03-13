@@ -31,6 +31,8 @@ module.exports = (grunt) ->
         files: jsFiles
           
     coffee:
+      options:
+        bare: true
       app:
         files:
           './assets/js/script.js' : ['assets/coffee/*.coffee']

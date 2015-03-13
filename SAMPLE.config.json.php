@@ -20,11 +20,11 @@ $json = array(
     'root'        => __DIR__.'/',
     'server_root' => __DIR__.'/',
     'mysql'       => array(
-        'user'    => '',
-        'pw'      => '',
-        'host'    => '',
-        'db'      => '',
-        'prefix'  => ''
+        'user'    => 'root',
+        'pw'      => 'qwe123',
+        'host'    => 'localhost',
+        'db'      => 'cardcore',
+        'prefix'  => 'tbl_'
     ),
   ),
   'live' => array(
