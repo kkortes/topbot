@@ -1,0 +1,37 @@
+// Smartphone, both orientations
+@media (max-width: 767px) {
+  html {
+    font-size: 50%
+  }
+  body {
+    #wrapper {
+      .crow {
+        height: auto;
+        &:before {
+          content: '';
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Smartphone, vertical
+  @media (orientation: portrait) {
+    body {
+      // Your code here
+      &:before {
+        content: 'smartphone vertical';
+      }
+    }
+  }
+  
+  // smartphone, horizontal
+  @media (orientation: landscape) {
+    body {
+      // Your code here
+      &:before {
+        content: 'smartphone horizontal';
+      }
+    }
+  }
+}

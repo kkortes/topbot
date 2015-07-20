@@ -1,0 +1,119 @@
+body {
+  &:before {
+    position: fixed;
+    visibility: hidden;
+    *display: none;
+  }
+}
+    
+// Topbot specifics, remove everything below this line
+img {
+  width: 100%;
+}
+body {
+  font-family: 'Roboto', arial;
+  font-size: 14px;
+  line-height: 22px;
+  color: gray;
+  background-color: lightgray;
+}
+.show-smartphone {
+  display: none;
+}
+.page-index {
+  #wrapper {
+    font-size: 250%;
+    line-height: 100%;
+    .fullwidth {
+      padding: 25px 0;
+      &:first-child {
+        padding: 100px 0;
+        border-bottom: 10px solid get-blue-grey(900);
+        p {
+          font-size: 75%;
+        }
+        .button {
+          width: 100%;
+          text-align: center;
+          &:hover {
+            background: get-blue-grey(400);
+          }
+        }
+      }
+    }
+    h1 {
+      font-weight: normal;
+    }
+    .keep-alive {
+      i {
+        font-size: 40px;
+      }
+      a {
+        font-size: 70px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+a {
+  &.link {
+    color: #00bcd4;
+  }
+}
+.top {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+code {
+  word-break: break-all;
+  white-space: normal;
+}
+ul {
+  li {
+    word-break: break-word;
+  }
+  &.nav {
+    width: 100%;
+    margin: 0;
+    li {
+      padding: 0;
+      a,
+      strong {
+        padding: 10px 20px;
+        &.active {
+          background: #00bcd4;
+        }
+      }
+    }
+  }
+}
+.mod-row {
+  .mod {
+    padding: 2.5px;
+    &.mod-sizes {
+      &.s-100 {
+        // code
+      }
+      &.s-75 {
+        // code
+      }
+      &.s-66 {
+        // code
+      }
+      &.s-50 {
+        // code
+      }
+      &.s-33 {
+        // code
+      }
+      &.s-25 {
+        // code
+      }
+    }
+  }
+}

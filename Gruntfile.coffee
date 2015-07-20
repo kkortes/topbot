@@ -8,10 +8,14 @@ jsFiles =
 module.exports = (grunt) ->
   # Project configuration.
   grunt.initConfig
+    less:
+      app:
+        files:
+          './assets/css/base.less.css' : './assets/less/base.less'
     stylus:
       app:
         files:
-          './assets/css/base.css' : './assets/styl/base.styl'
+          './assets/css/base.styl.css' : './assets/styl/base.styl'
     imagemin:
       files:
          expand: true
@@ -46,6 +50,9 @@ module.exports = (grunt) ->
       styl:
         files: ['./assets/styl/*.styl']
         tasks: ['stylus:app']
+      less:
+        files: ['./assets/less/*.less']
+        tasks: ['less:app']
 
     notify_hooks:
       options:
@@ -60,9 +67,10 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-imagemin'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
+  grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-notify';
   # Default task.
-  grunt.registerTask 'default', ['coffee', 'stylus:app', 'uglify:app', 'watch']
-  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'uglify:dist', 'uglify:dist']
+  grunt.registerTask 'default', ['coffee', 'stylus:app', 'less:app', 'uglify:app', 'watch']
+  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'less:app', 'uglify:dist', 'uglify:dist']
 
   grunt.task.run 'notify_hooks'

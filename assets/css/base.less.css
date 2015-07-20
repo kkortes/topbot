@@ -1,0 +1,165 @@
+@import "../less/crow.css";
+/*
+ Base css file. The compiled .css from this file should be the only file included on your web
+*/
+/*
+  > topbot CSS <
+  The only file necessary to get a
+  (really) smart sticky footer!
+
+  Author: Kim Korte
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: table;
+  width: 100%;
+}
+html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+footer,
+.bot,
+header,
+.top,
+#wrapper {
+  display: table-row;
+  min-height: 1px;
+}
+#wrapper {
+  height: 100%;
+  position: relative;
+}
+body:before {
+  position: fixed;
+  visibility: hidden;
+  *display: none;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: 'Roboto', arial;
+  font-size: 14px;
+  line-height: 22px;
+  color: gray;
+  background-color: lightgray;
+}
+.show-smartphone {
+  display: none;
+}
+.page-index #wrapper {
+  font-size: 250%;
+  line-height: 100%;
+}
+.page-index #wrapper .fullwidth {
+  padding: 25px 0;
+}
+.page-index #wrapper .fullwidth:first-child {
+  padding: 100px 0;
+  border-bottom: 10px solid get-blue-grey(900);
+}
+.page-index #wrapper .fullwidth:first-child p {
+  font-size: 75%;
+}
+.page-index #wrapper .fullwidth:first-child .button {
+  width: 100%;
+  text-align: center;
+}
+.page-index #wrapper .fullwidth:first-child .button:hover {
+  background: get-blue-grey(400);
+}
+.page-index #wrapper h1 {
+  font-weight: normal;
+}
+.page-index #wrapper .keep-alive i {
+  font-size: 40px;
+}
+.page-index #wrapper .keep-alive a {
+  font-size: 70px;
+}
+.page-index #wrapper .keep-alive a:hover {
+  text-decoration: none;
+}
+a.link {
+  color: #00bcd4;
+}
+.top a:hover {
+  text-decoration: none;
+}
+code {
+  word-break: break-all;
+  white-space: normal;
+}
+ul li {
+  word-break: break-word;
+}
+ul.nav {
+  width: 100%;
+  margin: 0;
+}
+ul.nav li {
+  padding: 0;
+}
+ul.nav li a,
+ul.nav li strong {
+  padding: 10px 20px;
+}
+ul.nav li a.active,
+ul.nav li strong.active {
+  background: #00bcd4;
+}
+.mod-row .mod {
+  padding: 2.5px;
+}
+@media (min-width: 1200px) {
+  body:before {
+    content: 'desktop';
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+  body:before {
+    content: 'tablet vertical';
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+  body:before {
+    content: 'tablet horizontal';
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  body #wrapper .crow {
+    height: auto;
+  }
+  body #wrapper .crow:before {
+    content: '';
+    display: none;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  body:before {
+    content: 'smartphone vertical';
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  body:before {
+    content: 'smartphone horizontal';
+  }
+}
