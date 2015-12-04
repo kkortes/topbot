@@ -1,6 +1,6 @@
 <div>
 	<div class="image waves-effect">
-  	<img />
+  	<img src="<?=$app->url?>assets/image/placeholder/landscape.jpg" width="100%" />
   	<div class="overlay">
   		<p>Click me
   		</p>

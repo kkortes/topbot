@@ -44,6 +44,39 @@ body:before {
   visibility: hidden;
   *display: none;
 }
+.heart-circle {
+  width: 290px;
+  height: 290px;
+  background-image: url(../image/heart-circle.png);
+  background-size: cover;
+  position: relative;
+}
+.heart-circle .half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.heart-circle .half .half-circle {
+  background-image: url(../image/heart-halfcircle.png);
+  background-size: cover;
+  width: 200%;
+  height: 100%;
+}
+.heart-circle .half.left {
+  left: .5px;
+}
+.heart-circle .half.left .half-circle {
+  transform: rotate(360deg);
+}
+.heart-circle .half.right {
+  right: 0;
+}
+.heart-circle .half.right .half-circle {
+  margin-left: -100%;
+  transform: rotate(180deg);
+}
 img {
   width: 100%;
 }
