@@ -1,23 +1,14 @@
-$screen-xs-min =      481px;
-$screen-phone =       $screen-xs-min;
+$auto-widths-iterations = 12 // Set to how many columns you want enable for auto fly operation
+$percent-widths-iterations = 100 // Set to percentages, defaults to 1,2,3,4,5 till 100
+$unit-widths-iterations = 12 // Set to the number of spans you want, default 12
+$gutter = 15 // Set to what gutter you want crow to use, to remove gutter use class "no-gutter", don't set this value to 0
 
-$screen-sm-min =      768px;
-$screen-tablet =      $screen-sm-min;
-
-$screen-md-min =      992px;
-$screen-desktop =     $screen-md-min;
-
-$screen-lg-min =      1200px;
-$screen-lg-desktop =  $screen-lg-min;
-
-$screen-xs-max =      ($screen-sm-min - 1)
-$screen-sm-max =      ($screen-md-min - 1)
-$screen-md-max =      ($screen-lg-min - 1)
-
-$auto-widths-iterations = 12
-$percent-widths-iterations = 100
-$unit-widths-iterations = 12
-$gutter = 15
+*,
+*:before,
+*:after
+  box-sizing: inherit
+html
+  box-sizing: border-box
 
 auto-widths(nums)
   for i in 1..nums
@@ -89,17 +80,8 @@ crow()
     margin: 0 (- $gutter * 1px)
     padding: 0
 
-destroy-all()
-  .crow
-    > *
-      display: block
-      width: auto
-    &:before 
-      content: ''
-      display: none
-destroy-crow()
-  &.crow,
-  &.crow.fly
+uncrow()
+  &.crow
     height: auto
     > *
       display: block
@@ -107,47 +89,3 @@ destroy-crow()
     &:before
       content: ''
       display: none
-
-// Desktop only styles (desktops, 1200px and up) 
-@media (min-width: $screen-lg-min)
-  body
-    // Your code here
-
-// Tablet, both orientations
-@media (min-width: $screen-sm-min) and (max-width: $screen-md-max)
-  body
-    .nest
-      width: 750px
-
-    // .nest .crow > .crow
-    //   destroy-crow()
-  
-  // Tablet, vertical
-  @media (orientation: portrait)
-    body
-      // Your code here
-
-  // Tablet, horizontal
-  @media (orientation: landscape)
-    body
-      // Your code here
-
-
-// Smartphone, both orientations
-@media (max-width: $screen-xs-max)
-  body
-    .nest
-      width: auto
-    // .crow 
-    //   &:not(.keep-alive)
-    //     destroy-crow()
-
-  // Smartphone, vertical
-  @media (orientation: portrait)
-    body
-      // Your code here
-
-  // smartphone, horizontal
-  @media (orientation: landscape)
-    body
-      // Your code here

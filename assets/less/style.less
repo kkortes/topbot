@@ -1,57 +1,11 @@
 body {
-  &:before {
-    position: fixed;
-    visibility: hidden;
-    *display: none;
-  }
-}
-
-.heart-circle {
-  width: 290px;
-  height: 290px;
-  background-image: url(../image/heart-circle.png);
-  background-size: cover;
-  position: relative;
-  .half {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    .half-circle {
-      background-image: url(../image/heart-halfcircle.png);
-      background-size: cover;
-      width: 200%;
-      height: 100%;
-    }
-    &.left {
-      left: .5px;
-      .half-circle {
-        transform: rotate(360deg);
-        //transform: rotate(180deg);
-      }
-    }
-    &.right {
-      right: 0;
-      .half-circle {
-        margin-left: -100%;
-        transform: rotate(180deg);
-      }
-    }
-  }
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @text-color;
+  background-color: @bg-color;
 }
 
 // Topbot specifics, remove everything below this line
-img {
-  width: 100%;
-}
-body {
-  font-family: 'Roboto', arial;
-  font-size: 14px;
-  line-height: 22px;
-  color: gray;
-  background-color: lightgray;
-}
 .show-smartphone {
   display: none;
 }

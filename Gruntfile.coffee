@@ -14,6 +14,8 @@ module.exports = (grunt) ->
           './assets/css/base.less.css' : './assets/less/base.less'
     stylus:
       app:
+        options:
+          compress: false
         files:
           './assets/css/base.styl.css' : './assets/styl/base.styl'
     imagemin:
