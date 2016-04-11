@@ -42,13 +42,18 @@ module.exports = (grunt) ->
       app:
         files:
           './assets/js/script.js' : ['assets/coffee/*.coffee']
+
+    concat:
+      app:
+        src: [
+          './bower_components/jquery/dist/jquery.min.js'
+        ]
+        dest: './assets/js/libs.js'
+
     watch:
       coffee:
         files: ['./assets/coffee/*.coffee']
-        tasks: ['coffee', 'uglify:app']
-      jsplugs:
-        files: ['./assets/js/libs/*.js']
-        tasks: ['uglify:app']
+        tasks: ['coffee', 'uglify:app', 'concat:app']
       styl:
         files: ['./assets/styl/*.styl']
         tasks: ['stylus:app']
@@ -72,7 +77,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-notify';
   # Default task.
-  grunt.registerTask 'default', ['coffee', 'stylus:app', 'less:app', 'uglify:app', 'watch']
-  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'less:app', 'uglify:dist', 'uglify:dist']
+  grunt.registerTask 'default', ['coffee', 'stylus:app', 'less:app', 'uglify:app', 'concat:app', 'watch']
+  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'less:app', 'uglify:dist', 'concat:app', 'uglify:dist']
 
   grunt.task.run 'notify_hooks'

@@ -1,6 +1,76 @@
-/*
- Base css file. The compiled .css from this file should be the only file included on your web
-*/
+@import "../icomoon/style.css";
+footer,
+.bot,
+header,
+.top,
+#wrapper {
+  display: table-row;
+  min-height: 1px;
+}
+#wrapper {
+  height: 100%;
+  position: relative;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+body {
+  display: table;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+body:before {
+  position: fixed;
+  visibility: hidden;
+  *display: none;
+}
+@media (min-width: 1200px) {
+  body:before {
+    content: 'desktop';
+  }
+}
+@media (max-width: 767px) {
+  body .nest {
+    width: auto;
+  }
+  body:before {
+    content: 'smartphone';
+  }
+}
+@media (orientation: portrait) and (max-width: 767px) {
+  body:before {
+    content: 'smartphone vertical';
+  }
+}
+@media (orientation: landscape) and (max-width: 767px) {
+  body:before {
+    content: 'smartphone horizontal';
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body .nest {
+    width: 750px;
+  }
+  body:before {
+    content: 'tablet';
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1199px) {
+  body:before {
+    content: 'tablet vertical';
+  }
+}
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
+  body:before {
+    content: 'tablet horizontal';
+  }
+}
 /* Set to how many columns you want enable for auto fly operation */
 /* Set to percentages, defaults to 1,2,3,4,5 till 100 */
 /* Set to the number of spans you want, default 12 */
@@ -23,7 +93,7 @@ html {
   height: 100%;
   vertical-align: middle;
 }
-.crow > div {
+.crow > * {
   vertical-align: middle;
   display: inline-block;
   font-size: medium;
@@ -454,3 +524,169 @@ html {
   margin: 0 -15px;
   padding: 0;
 }
+body {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .crow.crow {
+    height: auto;
+  }
+  .crow.crow > * {
+    display: block;
+    width: 100%;
+  }
+  .crow.crow:before {
+    content: '';
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: #4d8daf;
+}
+a:hover {
+  color: #457f9d;
+}
+ul.inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.inline li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.unstyled li {
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.relative {
+  position: relative;
+}
+.splash,
+.absolute {
+  position: absolute;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.image {
+  display: block;
+  line-height: 0;
+}
+/*.show-smartphone {
+  display: none;
+}
+.page-index {
+  #wrapper {
+    font-size: 250%;
+    line-height: 100%;
+    .fullwidth {
+      padding: 25px 0;
+      &:first-child {
+        padding: 100px 0;
+        p {
+          font-size: 75%;
+        }
+        .button {
+          width: 100%;
+          text-align: center;
+          
+        }
+      }
+    }
+    h1 {
+      font-weight: normal;
+    }
+    .keep-alive {
+      i {
+        font-size: 40px;
+      }
+      a {
+        font-size: 70px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+a {
+  &.link {
+    color: #00bcd4;
+  }
+}
+.top {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+code {
+  word-break: break-all;
+  white-space: normal;
+}
+ul {
+  li {
+    word-break: break-word;
+  }
+  &.nav {
+    width: 100%;
+    margin: 0;
+    li {
+      padding: 0;
+      a,
+      strong {
+        padding: 10px 20px;
+        &.active {
+          background: #00bcd4;
+        }
+      }
+    }
+  }
+}
+.mod-row {
+  .mod {
+    padding: 2.5px;
+    &.mod-sizes {
+      &.s-100 {
+        // code
+      }
+      &.s-75 {
+        // code
+      }
+      &.s-66 {
+        // code
+      }
+      &.s-50 {
+        // code
+      }
+      &.s-33 {
+        // code
+      }
+      &.s-25 {
+        // code
+      }
+    }
+  }
+}
+*/

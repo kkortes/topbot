@@ -1,9 +1,9 @@
 <?
 if(isset($_GET['compile'])) {
   ?>
-  <div class="modal" style="position: fixed;">
-    <div class="nest crow" style="height:100%;">
-      <div class="card ws-12 bg-white">
+  <div class="modal" style="position: fixed;width:100%;height:100%;top:0;left:0;background-color: rgba(0,0,0,.9);">
+    <div class="nest crow" style="height:100%;top:0;left:0;color:white;">
+      <div class="card ws-12" style="padding: 10px;">
         <div class="spacer half"></div>
         <div class="crow">
           <?
@@ -15,7 +15,7 @@ if(isset($_GET['compile'])) {
             <br /><br />
             To your right you'll find a configuration for this.
             <br /><br />
-            <span class="small text-red">Warning: the compile will overwrite any exisiting files/directories with the same name at the destination, so be sure it does not overwrite anything you want to keep.</span>
+            <span class="small" style="color:red;">Warning: the compile will overwrite any exisiting files/directories with the same name at the destination, so be sure it does not overwrite anything you want to keep.</span>
             </p>
           </div>
           <div class="ws-8 up">

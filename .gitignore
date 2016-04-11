@@ -1,6 +1,4 @@
-bower_components/leaf-css-framework
 config.json.php
-.codekit-cache
 node_modules
 */.DS_Store
 .DS_Store

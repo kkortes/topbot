@@ -1,5 +1,4 @@
-# checks what media query platform is running (on window resize). Returns:
-# tablet-horizontal, tablet-vertical, smartphone-horizontal, smartphone-vertical or desktop
+# Checks what media query platform is running (on window resize).
 getPlatform = (withorientation = false) ->
   platform = window.getComputedStyle(document.body,':before').getPropertyValue('content').replace(/'/g,'').replace(/"/g,'')
   if !withorientation
