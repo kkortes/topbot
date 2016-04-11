@@ -1,4 +1,4 @@
-topbot
+{ topbot }
 ======
 
 A minimalistic PHP no-style-theme starter kit.

@@ -1,9 +1,5 @@
 jsFiles = 
-  './assets/js/script.js' : 
-    ['./bower_components/leaf-css-framework/js/libs/imagesloaded/imagesloaded.pkgd.min.js', 
-    './bower_components/leaf-css-framework/js/libs/waves/dist/waves.js', 
-    './bower_components/leaf-css-framework/js/script.js', 
-    './assets/js/script.js']
+  './assets/js/script.js' : ['./assets/js/script.js']
 
 module.exports = (grunt) ->
   # Project configuration.
@@ -11,13 +7,13 @@ module.exports = (grunt) ->
     less:
       app:
         files:
-          './assets/css/base.less.css' : './assets/less/base.less'
+          './assets/css/base.css' : './assets/less/base.less'
     stylus:
       app:
         options:
           compress: false
         files:
-          './assets/css/base.styl.css' : './assets/styl/base.styl'
+          './assets/css/base.css' : './assets/styl/base.styl'
     imagemin:
       files:
          expand: true
@@ -50,16 +46,23 @@ module.exports = (grunt) ->
         ]
         dest: './assets/js/libs.js'
 
+    autoprefixer:
+      app:
+        src: './assets/css/base.css'
+        dest: './assets/css/base.css'
+
     watch:
+      options:
+        livereload: true #requires "live reload plugin"
       coffee:
         files: ['./assets/coffee/*.coffee']
         tasks: ['coffee', 'uglify:app', 'concat:app']
       styl:
         files: ['./assets/styl/*.styl']
-        tasks: ['stylus:app']
+        tasks: ['stylus:app', 'autoprefixer:app']
       less:
         files: ['./assets/less/*.less']
-        tasks: ['less:app']
+        tasks: ['less:app', 'autoprefixer:app']
 
     notify_hooks:
       options:
@@ -75,9 +78,10 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-contrib-less'
+  grunt.loadNpmTasks 'grunt-autoprefixer'
   grunt.loadNpmTasks 'grunt-notify';
   # Default task.
   grunt.registerTask 'default', ['coffee', 'stylus:app', 'less:app', 'uglify:app', 'concat:app', 'watch']
-  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'less:app', 'uglify:dist', 'concat:app', 'uglify:dist']
+  grunt.registerTask 'dist', ['coffee', 'stylus:app', 'less:app', 'uglify:dist', 'concat:app', 'autoprefixer:app', 'uglify:dist']
 
   grunt.task.run 'notify_hooks'

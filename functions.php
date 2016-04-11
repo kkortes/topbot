@@ -1,4 +1,4 @@
-<?
+<?php
 	// Download function target a ?download=directory/file
 	// Notice! This function is unsafe to leave at it is.
   // Make restrictions for which files are allowed to be downloaded.
@@ -30,4 +30,3 @@
       return $value;
     }
   }
-?>

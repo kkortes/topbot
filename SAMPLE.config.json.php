@@ -1,4 +1,4 @@
-<?
+<?php
 /*
   Remove SAMPLE. from my name and put me in project root
 */
@@ -43,4 +43,3 @@ $json = array(
 );
 
 echo json_encode($json);
-?>
