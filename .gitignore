@@ -1,7 +1,11 @@
-config.json.php
+# DIRECTORIES
 node_modules
-*/.DS_Store
-.DS_Store
 uploads
 core
 nano
+gulp
+
+# FILES
+config.json.php
+*/.DS_Store
+.DS_Store
