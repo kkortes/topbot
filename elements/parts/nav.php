@@ -10,7 +10,7 @@
 
       if(isset($page[1])) {
         if($page[0] == 'modules') continue;
-        //if($page[0] == 'index') continue;
+        if($page[0] == 'index') continue;
 
         $class = '';
         if(isset($_GET['page']) && $page[0] == $_GET['page']) {

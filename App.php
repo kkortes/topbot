@@ -90,7 +90,7 @@ class App {
 
     $backtrace = debug_backtrace();
     if($backtrace[0]['file'] == $app->server_root.'index.php')
-      $this->htmlbuffer .= /*"<!-- Start ".$path." -->\n".*/$output/*."\n<!-- End ".$path." -->\n"*/;
+      $this->htmlbuffer .= "<!-- Start ".$path." -->\n".$output."\n<!-- End ".$path." -->\n";
 
     return $output;
   }
