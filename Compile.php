@@ -41,11 +41,13 @@ if(isset($_GET['compile'])) {
                       $show = false;
 
                     if(
+                      $thisfile == 'gulp' ||
                       $thisfile == 'assets' ||
+                      $thisfile == 'public' ||
                       $thisfile == 'bower_components' ||
                       $thisfile == 'favicon.ico' ||
                       $thisfile == 'package.json' ||
-                      $thisfile == 'Gruntfile.coffee'
+                      $thisfile == 'gulpfile.js'
                     )
                       $show = true;
 

@@ -22,4 +22,6 @@ placeholderImage = ->
 init = ->
   placeholderImage()
 
-init()
+document.addEventListener 'DOMContentLoaded', ->
+  init()
+  return
