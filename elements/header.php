@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="<?=$app->url?>favicon.ico?v=1" />
 
   <link rel="stylesheet" type="text/css" href="<?=$app->url?>assets/css/base.css?v=<?=date('hs')?>" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="page-<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>">
 <?=$app->get('parts/top')?>

@@ -8,9 +8,16 @@ getPlatform = (withorientation = false) ->
   return platform
 
 placeholderImage = ->
+  rand = ['default', 'portrait', 'landscape']
+
   $('img').each ->
+    image = Math.floor((Math.random() * 3))
+
+    #locked to certain orientation
+    image = 1
+
     if !$(this).attr('src')
-      $(this).attr('src', window.app_url+'assets/image/placeholder/default.jpg')
+      $(this).attr('src', window.app_url+'assets/image/placeholder/'+rand[image]+'.jpg')
 
 init = ->
   placeholderImage()
