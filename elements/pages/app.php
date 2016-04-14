@@ -22,7 +22,9 @@
 				<p>$app now consists of (for this project):</p>
 				<p><code>var_dump($app);</code></p>
 				<?
-				$app->htmlbuffer = '';
+				
+				$app->htmlbuffer = false;
+				unset($app->htmlbuffer);
 
 				$app->pointer = '';
 				var_dump($app);
@@ -32,15 +34,15 @@
 				<hr />
 
 				<h2>Working with config.json.php</h2>
-				<p>When including App.php it will use default parameters as seen above. You can override those by creating a config.json.php file. With App.php comes a dummy file for this, containing the basic structure for your overrides. See SAMPLE.config.json.php</p>
+				<p>When including App.php it will use default parameters as seen above. You can override those by creating a config.json.php file. Topbot bundles a placeholder file for this, containing the basic structure for your overrides. See SAMPLE.config.json.php</p>
 				<p>
 					<?
 					var_dump(file_get_contents($app->server_root.'SAMPLE.config.json.php'));
 					?>
 				</p>
-				<p>App.php will notice if you are in LIVE or LOCALHOST production environment and use the corresponding values to that.</p>
+				<p>App.php will notice if you are in LIVE or LOCALHOST environment and use the corresponding values to that.</p>
 				<p>If you decide to use a config.json.php file for you project, note that the config.json.php have to be positioned in your project root to get the server variables accurate.</p>
-				<p>For your App.php to detect where config.json.php is located, simple pass a string containing the path of where it is located like so:</p>
+				<p>For your App.php to detect where config.json.php is located, simply pass a string containing the path of where it is located like so:</p>
 				<p><code>$app = new App(array(), __DIR__.'/../');</code></p>
 				<p>$app will now contain the basic server variables, but also those that you choose to include, like in the example, mysql credentials.</p>
 

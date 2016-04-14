@@ -42,13 +42,13 @@
           </li>
           <li class="ws-6">
             <h2>Markup img's</h2>
-            <p>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a dummy image will pop up, <a href="/modules/module/sizes">like so</a>.
+            <p>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a placeholder image will pop up, <a href="/modules/module/sizes">like so</a>.
             </p>
             <div class="spacer half"></div>
           </li>
           <li class="ws-6">
-            <h2>Sticky footer</h2>
-            <p>The way it's supposed to be.<br />{ bot } has dynamic height.
+            <h2>Real sticky footer</h2>
+            <p>{ bot } has dynamic height - the way it's supposed to be.
             </p>
             <div class="spacer half"></div>
           </li>
