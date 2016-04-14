@@ -5,6 +5,7 @@ A minimalistic PHP no-style-theme starter kit.
 
 I've come to the conclusion that all websites shares some equal denominators. Topbot takes the standards as far as it gets without making the website personal. Nothing is forced upon you, you choose what to use and what to keep.
 
+- Gulp added, grunt removed. Gulp builds faster, that's a reason enought to swap :>
 - HTML-suit compiler added! You can visit myurl.com/?compile and compile a single PHP page to clean HTML! If you want every single page that you've created HTML'ed, just go through every one of them and run the ?compile.
 - Crow is updated. Beside from .stylus it's now also compile'able in .less :> this is also true for topbot's CSS.
 - Leaf removed from standard topbot. If you want to include leaf in your project you will have to do it yourself. (http://getleaf.eu) After all, it's a no-style-theme.
