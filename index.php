@@ -10,4 +10,4 @@
 
   echo $app->get('footer');
 
-  $app->includer(array('compile'));
+  $app->includer(array('Compile'));
