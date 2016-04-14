@@ -1,4 +1,5 @@
 <div class="fullwidth">
+  <div class="spacer"></div>
   <?
     $module = (isset($_GET['module'])?$_GET['module']:'info-module');
     $class = explode('/', $module);

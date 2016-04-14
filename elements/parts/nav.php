@@ -1,6 +1,5 @@
-<div class="tabs">
-  <ul class="inline nav text-center">
-    <li><strong><?=__('Page(s)', '')?></strong></li>
+<div class="navigation">
+  <ul class="inline">
     <?
     $glob = glob(__DIR__.'/../pages/*');
     foreach($glob as $node) {
@@ -11,8 +10,7 @@
 
       if(isset($page[1])) {
         if($page[0] == 'modules') continue;
-        if($page[0] == 'crow') continue;
-        if($page[0] == 'index') continue;
+        //if($page[0] == 'index') continue;
 
         $class = '';
         if(isset($_GET['page']) && $page[0] == $_GET['page']) {
@@ -24,8 +22,7 @@
       }
     }
     ?>
-
-    <li><strong><?=__('Module(s)', '')?></strong></li>
+  
     <?
     $glob = glob(__DIR__.'/../modules/*');
     foreach($glob as $node) {

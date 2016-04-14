@@ -1,13 +1,15 @@
 <div class="fullwidth">
+	<div class="spacer"></div>
+
 	<div class="nest">
 	  <div class="crow">
 	    <div class="ws-12">
 				<h2>Explanation of <i>App.php</i></h2>
 				<p>App.php is a system file that is located in the project root folder.</p>
-				<p>When developing a web it's important to have good server variables to use for links and includes, this is what App.php does for you.</p>
-				<p>Don't you think it would be nice to be able to use:
+				<p>It's important to have friendly server variables to use for links and includes, this is what App.php does for you.</p>
+				<p>It's pretty nice to be able to use
 				<code><?=htmlspecialchars('<script src="<?=$app->url?>assets/script.js"></script>');?></code>
-				everywhere and not worry if your url structure is "localhost/myweb", "myweb" or "myweb.com"?
+				and not worry if your url structure is "localhost/myweb", "myweb" or "myweb.com"?
 				</p>
 				<p>App.php can be included standalone, as it is. Though if you do it that way, it's important that the file is placed in your project root folder. If not, its parameters won't be accurate.
 				</p>
@@ -20,6 +22,8 @@
 				<p>$app now consists of (for this project):</p>
 				<p><code>var_dump($app);</code></p>
 				<?
+				$app->htmlbuffer = '';
+
 				$app->pointer = '';
 				var_dump($app);
 				$app->pointer = 'elements/';
