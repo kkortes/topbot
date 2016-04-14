@@ -11,7 +11,7 @@
       <div class="ws-3 text-right">
         <label class="crow no-gutter text-right no-js-toggle" for="toggle"><span class="icon icon-menu"></span></label>
         <div class="bundle-tag">
-          <span>Bundled with</span> <div class="inline"><a href="http://getcrow.eu" style="color: black;">Cr<span target="_blank" class="icon icon-crow"></span>w</a></div>
+          <span>Bundled with</span> <div class="inline"><a href="http://getcrow.eu" target="_blank" style="color: black;">Cr<span class="icon icon-crow"></span>w</a></div>
         </div>
       </div>
     </div>
