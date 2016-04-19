@@ -17,7 +17,7 @@ var utils = require('../utils'),
   config = require('../config');
 
 var defaults = {
-  entries: ['./' + config.scripts.src],
+  entries: ['./' + config.vendorscripts.src],
   extensions: ['.js', '.jsx'],
   debug: !config.production
 };
@@ -45,7 +45,7 @@ var compile = function (watch) {
       .pipe(buffer())
       .pipe(gulpif(config.production, stripDebug()))
       .pipe(gulpif(config.production, uglify()))
-      .pipe(gulp.dest(config.scripts.dest));
+      .pipe(gulp.dest(config.vendorscripts.dest));
   };
 
   if (watch) {

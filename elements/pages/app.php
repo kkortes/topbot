@@ -24,7 +24,7 @@
 				<?
 				
 				$app->htmlbuffer = false;
-				unset($app->htmlbuffer);
+				$app->htmlbuffer = '';
 
 				$app->pointer = '';
 				var_dump($app);

@@ -14,14 +14,19 @@ module.exports = {
     dest: 'public/css'
   },
 
-  scripts: {
-    src: 'bower_components/jquery/dist/jquery.js',
+  vendorscripts: {
+    src: ['./bower_components/jquery/dist/jquery.js'],
+    dest: 'public/js'
+  },
+
+  concat: {
+    src: 'assets/js/*',
     dest: 'public/js'
   },
 
   coffee: {
-    src: 'assets/coffee/script.coffee',
-    dest: 'public/js'
+    src: 'assets/coffee/*.coffee',
+    dest: 'assets/js'
   },
 
   images: {

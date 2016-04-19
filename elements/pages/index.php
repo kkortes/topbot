@@ -2,7 +2,8 @@
   <div class="nest">
     <div class="spacer"></div>
 
-    <h1>{ topbot }</h1>
+    <img src="<?=$app->url?>assets/image/topbot.png" style="width: 80px; display: inline-block;">
+    <h1 style="display: inline-block; vertical-align: top;margin: 25px 0 0 10px;">{ topbot }</h1>
     <p>A minimalistic PHP no-style-theme starter kit.
     </p>
 

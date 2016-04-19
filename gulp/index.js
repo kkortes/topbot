@@ -11,7 +11,7 @@ gulp.task('watch', function () {
   gulp.watch(['assets/styl/**/*'], ['stylus']);
   gulp.watch(['assets/less/**/*'], ['less']);
   gulp.watch(['assets/image/**/*'], ['images']);
-  gulp.watch(['assets/coffee/**/*'], ['coffee', 'scripts']);
+  gulp.watch(['assets/coffee/**/*'], ['coffee', 'concat', 'vendorscripts']);
 });
 
-gulp.task('default', ['stylus', 'less', 'images', 'coffee', 'scripts', 'modernizr', 'browserify']);
+gulp.task('default', ['stylus', 'less', 'images', 'coffee', 'concat', 'vendorscripts', 'modernizr']); //'browserify'

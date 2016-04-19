@@ -1,0 +1,72 @@
+footer,
+.bot,
+header,
+.top,
+#wrapper {
+  display: table-row;
+  min-height: 1px;
+}
+#wrapper {
+  height: 100%;
+  position: relative;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+body {
+  display: table;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  &:before {
+    position: fixed;
+    visibility: hidden;
+    *display: none;
+  }
+  @media @desktop {
+    &:before {
+      content: 'desktop';
+    }
+  }
+  @media @smartphone {
+    .nest {
+      width: auto;
+    }
+    &:before {
+      content: 'smartphone';
+    }
+  }
+  @media @smartphone-portrait {
+    &:before {
+      content: 'smartphone vertical';
+    }
+  }
+  @media @smartphone-landscape {
+    &:before {
+      content: 'smartphone horizontal';
+    }
+  }
+  @media @tablet {
+    .nest {
+      width: 750px;
+    }
+    &:before {
+      content: 'tablet';
+    }
+  }
+  @media @tablet-portrait {
+    &:before {
+      content: 'tablet vertical';
+    }
+  }
+  @media @tablet-landscape {
+    &:before {
+      content: 'tablet horizontal';
+    }
+  }
+}
