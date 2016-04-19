@@ -34,6 +34,11 @@ module.exports = {
     dest: 'public/image'
   },
 
+  copy: {
+    src: ['./assets/icomoon/**/*'],
+    dest: 'public/icomoon'
+  },
+
   modernizr: {
     src: 'assets/js/**/*',
     dest: 'public/js/libs',
