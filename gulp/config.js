@@ -1,4 +1,3 @@
-
 var gutil = require('gulp-util');
 
 module.exports = {
@@ -14,20 +13,25 @@ module.exports = {
     dest: 'public/css'
   },
 
-  vendorscripts: {
+  libs: {
     src: ['./bower_components/jquery/dist/jquery.js'],
     dest: 'public/js'
   },
 
-  concat: {
-    src: 'assets/js/*',
+  browserify: {
+    src: ['assets/js/base.js'],
     dest: 'public/js'
   },
 
-  coffee: {
-    src: 'assets/coffee/*.coffee',
-    dest: 'assets/js'
-  },
+  // concat: {
+  //   src: 'assets/js/*',
+  //   dest: 'public/js'
+  // },
+
+  // coffee: {
+  //   src: 'assets/coffee/*.coffee',
+  //   dest: 'assets/js'
+  // },
 
   images: {
     src: 'assets/image/**/*',
@@ -35,8 +39,8 @@ module.exports = {
   },
 
   copy: {
-    src: ['./assets/icomoon/**/*'],
-    dest: 'public/icomoon'
+    src: ['./assets/*icomoon/**/*'],
+    dest: 'public'
   },
 
   modernizr: {

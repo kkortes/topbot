@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 var utils = require('../utils'),
   config = require('../config');
 
-gulp.task('vendorscripts', function () {
+gulp.task('libs', function () {
   gulp.src(config.vendorscripts.src)
     .on('error', utils.handleError)
     .pipe(concat('libs.js'))

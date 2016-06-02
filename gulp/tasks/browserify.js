@@ -1,4 +1,3 @@
-
 var _ = require('lodash'),
   gulp = require('gulp'),
   chalk = require('chalk'),
@@ -17,10 +16,23 @@ var utils = require('../utils'),
   config = require('../config');
 
 var defaults = {
-  entries: ['./' + config.vendorscripts.src],
+  entries: ['./' + config.browserify.src],
   extensions: ['.js', '.jsx'],
   debug: !config.production
 };
+
+// gulp.task('es6', function() {
+//   return browserify({
+//         entries: config.es6.src
+//     })
+//     .transform(babelify.configure({
+//         presets : ["es2015"]
+//     }))
+//     .bundle() 
+//     .on('error', utils.handleError)
+//     .pipe(source("app.js"))
+//     .pipe(gulp.dest(config.es6.dest))
+// });
 
 var options = _.assign({}, watchify.args, defaults);
 
@@ -39,13 +51,16 @@ var compile = function (watch) {
 
   var rebundle = function () {
     return bundler
+      .transform(babelify.configure({
+          presets : ["es2015"]
+      }))
       .bundle()
       .on('error', utils.handleError)
-      .pipe(source('script.js'))
+      .pipe(source('base.js'))
       .pipe(buffer())
       .pipe(gulpif(config.production, stripDebug()))
       .pipe(gulpif(config.production, uglify()))
-      .pipe(gulp.dest(config.vendorscripts.dest));
+      .pipe(gulp.dest(config.browserify.dest));
   };
 
   if (watch) {
