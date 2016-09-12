@@ -23,6 +23,44 @@
             <div class="spacer"></div>
           </li>
           <li class="ws-6">
+            <h2>JS</h2>
+            <p>Minimal amount of JS. Basically what you want and need for every web project. Write ES6, compile to ES5.
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
+            <h2>CSS</h2>
+            <p>Minimal amount of CSS. Basically what you want and need for every web project. Write LESS/Stylus, compile to CSS.
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
+            <h2>Device and orientation detection JS</h2>
+            <p>Topbot bundles a smart solution to media queries.<br />Utils.getDevice() currently is <strong>{{ device }}</strong><br />Utils.getOrientation() currently is <strong>{{ orientation }}</strong>
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
+            <h2>Device and orientation detection CSS</h2>
+            The JS-detection goes hand-in-hand with the CSS.
+            <br /><code>@media @tablet { color: <span class="less-color">red</span>; }</code> for LESS
+            <br /><code>@media $tablet { color: <span class="stylus-color">blue</span>; }</code> for Stylus.
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
+            <h2>Vue.js</h2>
+            <p>I use Vuejs as my frontend framework of choice. This is totally optional but highly recommended. Check it out <a href="https://vuejs.org/" target="_blank">here</a>.
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
+            <h2>Gulp</h2>
+            <p>Topbot is built using gulp. It comes with a nice structure and is already set up to deal with ES6 using babelify and browserify. 
+            </p>
+            <div class="spacer half"></div>
+          </li>
+          <li class="ws-6">
             <h2>Crow Grid Framework</h2>
             <p><i class="icon icon-crow text-black"></i> is a smart CSS grid framework. You can check it out <a href="http://getcrow.eu" target="_blank">here</a>.
             </p>
@@ -30,13 +68,13 @@
           </li>
           <li class="ws-6">
             <h2>App.php</h2>
-            <p>App.php library. You can read more about it <a href="/app">here</a>.
+            <p>Hand crafted library for smart project variables. You can read more about it <a href="/app">here</a>.
             </p>
             <div class="spacer half"></div>
           </li>
           <li class="ws-6">
             <h2>Compile.php - PHP-to-HTML</h2>
-            <p>Visit myurl.com/?compile to compile your PHP project into HTML. (trust me, this is nice!)
+            <p>Visit myurl.localhost/?compile to compile your PHP project into HTML. <a href="<?=$app->url?>?compile">Try it here</a>.
             </p>
             <div class="spacer half"></div>
           </li>
@@ -48,13 +86,13 @@
           </li>
           <li class="ws-6">
             <h2>Markup img's</h2>
-            <p>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a placeholder image will pop up, <a href="/modules/module/sizes">like so</a>.
+            <p>Put a <?=htmlspecialchars('<img />')?> tag anywhere and a placeholder image will pop up, <a href="/modules/module/image">like so</a>.
             </p>
             <div class="spacer half"></div>
           </li>
           <li class="ws-6">
             <h2>Real sticky footer</h2>
-            <p>{ bot } has dynamic height - the way it's supposed to be.
+            <p>{ bot } has dynamic height and sticks. It just works.
             </p>
             <div class="spacer half"></div>
           </li>

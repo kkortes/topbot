@@ -15,34 +15,6 @@ body {
 //   }
 // }
 
-.media-query {
-  display: none;
-  @media @smartphone {
-    &.inline-block-smartphone {
-      .inline();
-    }
-    &.block-smartphone {
-      display: block;
-    }
-  }
-  @media @tablet {
-    &.inline-block-tablet {
-      .inline();
-    }
-    &.block-tablet {
-      display: block;
-    }
-  }
-  @media @desktop {
-    &.inline-block-desktop {
-      .inline();
-    }
-    &.block-desktop {
-      display: block;
-    }
-  }
-}
-
 a {
   text-decoration: none;
   color: @link-color;
@@ -108,6 +80,46 @@ img {
 }
 
 // Topbot specifics, remove everything below this line
+
+@media @tablet {
+  .less-color {
+    color: red;
+  }
+}
+@media @tablet {
+  .stylus-color {
+    color: blue;
+  }
+}
+
+.media-query {
+  display: none;
+  @media @smartphone {
+    &.inline-block-smartphone {
+      .inline();
+    }
+    &.block-smartphone {
+      display: block;
+    }
+  }
+  @media @tablet {
+    &.inline-block-tablet {
+      .inline();
+    }
+    &.block-tablet {
+      display: block;
+    }
+  }
+  @media @desktop {
+    &.inline-block-desktop {
+      .inline();
+    }
+    &.block-desktop {
+      display: block;
+    }
+  }
+}
+
 .spacer {
   height: 40px;
   &.half {

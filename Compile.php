@@ -11,9 +11,9 @@ if(isset($_GET['compile'])) {
           ?>
           <div class="ws-4">
             <h1>HTML compiler</h1>
-            <p>With topbot you can compile a single php-page to raw HTML.
+            <p>With topbot you can compile a single PHP-page into raw HTML.
             <br /><br />
-            To your right you'll find a configuration for this.
+            To your right you'll find the configuration for this.
             <br /><br />
             <span class="small" style="color:red;">Warning: the compile will overwrite any exisiting files/directories with the same name at the destination, so be sure it does not overwrite anything you want to keep.</span>
             </p>
@@ -45,6 +45,9 @@ if(isset($_GET['compile'])) {
                       $thisfile == 'assets' ||
                       $thisfile == 'public' ||
                       $thisfile == 'favicon.ico' ||
+                      $thisfile == 'favicon-desktop.ico' ||
+                      $thisfile == 'favicon-tablet.ico' ||
+                      $thisfile == 'favicon-smartphone.ico' ||
                       $thisfile == 'package.json' ||
                       $thisfile == 'gulpfile.js'
                     )
@@ -70,7 +73,7 @@ if(isset($_GET['compile'])) {
                   <input type="text" id="dest" name="dest" value="html/" />
                   <div class="spacer half"></div>
 
-                  <label for="dest">Name for html-file</label>
+                  <label for="dest">Name for HTML-file</label>
                   <input type="text" id="name" name="name" value="<?=isset($_GET['page']) ? $_GET['page'].'.html' : 'index.html'?>" />
                   <div class="spacer half"></div>
 

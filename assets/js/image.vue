@@ -1,14 +1,14 @@
 <style lang="less">
-  @import '../../assets/less/variables.less';
-  @import '../../assets/less/crow.less';
+  // @import '../../assets/less/variables.less';
+  // @import '../../assets/less/crow.less';
 
-  .mod-image {
-    .crow {
-      @media @smartphone {
-        .uncrow();
-      }
-    }
-  }
+  // .mod-image {
+  //   .crow {
+  //     @media @smartphone {
+  //       .uncrow();
+  //     }
+  //   }
+  // }
 </style>
 
 <template>
