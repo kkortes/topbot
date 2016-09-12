@@ -15,8 +15,9 @@ gulp.task('watch', function () {
   //gulp.watch(['assets/coffee/**/*'], ['coffee', 'concat', 'libs']);
 });
 
-gulp.task('default', ['copy', 'stylus', 'less', 'images', 'libs', 'browserify']);
+gulp.task('default', ['copy', 'stylus', 'less', 'images', 'browserify']);
 // Unused
 // 'modernizr',
 // 'concat',
 // 'coffee',
+// 'libs',

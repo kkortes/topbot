@@ -7,10 +7,38 @@ body {
   overflow: hidden;
 }
 
-@media @smartphone {
-  #wrapper {
-    .crow {
-      .uncrow();
+// @media @smartphone {
+//   #wrapper {
+//     .crow {
+//       .uncrow();
+//     }
+//   }
+// }
+
+.media-query {
+  display: none;
+  @media @smartphone {
+    &.inline-block-smartphone {
+      .inline();
+    }
+    &.block-smartphone {
+      display: block;
+    }
+  }
+  @media @tablet {
+    &.inline-block-tablet {
+      .inline();
+    }
+    &.block-tablet {
+      display: block;
+    }
+  }
+  @media @desktop {
+    &.inline-block-desktop {
+      .inline();
+    }
+    &.block-desktop {
+      display: block;
     }
   }
 }
@@ -92,7 +120,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
-  font-family: 'Merriweather', Arial;
+  font-family: 'OpenSans-Regular', Arial;
 }
 
 p {

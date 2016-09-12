@@ -10,7 +10,8 @@ var _ = require('lodash'),
   envify = require('envify/custom'),
   browserify = require('browserify'),
   source = require('vinyl-source-stream'),
-  stripDebug = require('gulp-strip-debug');
+  stripDebug = require('gulp-strip-debug'),
+  vueify = require('vueify');
 
 var utils = require('../utils'),
   config = require('../config');
@@ -44,6 +45,7 @@ var compile = function (watch) {
   }
 
   bundler
+    .transform(vueify)
     .transform(envify(process.env))
     .transform(babelify.configure({
       ignore: /(bower_components)|(node_modules)/

@@ -44,7 +44,6 @@ if(isset($_GET['compile'])) {
                       $thisfile == 'gulp' ||
                       $thisfile == 'assets' ||
                       $thisfile == 'public' ||
-                      $thisfile == 'bower_components' ||
                       $thisfile == 'favicon.ico' ||
                       $thisfile == 'package.json' ||
                       $thisfile == 'gulpfile.js'

@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
   gulpif = require('gulp-if'),
   stylus = require('gulp-stylus'),
-  minify = require('gulp-minify-css'),
+  cleanCSS = require('gulp-clean-css'),
   sourcemaps = require('gulp-sourcemaps'),
   autoprefixer = require('gulp-autoprefixer');
 
@@ -39,6 +39,6 @@ gulp.task('stylus', function () {
     .pipe(autoprefixer(settings.autoprefixer))
     .on('error', utils.handleError)
     .pipe(gulpif(!config.production, sourcemaps.write()))
-    .pipe(gulpif(config.production, minify()))
+    .pipe(gulpif(config.production, cleanCSS()))
     .pipe(gulp.dest(config.stylus.dest));
 });

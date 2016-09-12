@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     less = require('gulp-less'),
-    minify = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -28,6 +28,6 @@ gulp.task('less', function () {
     .pipe(autoprefixer(settings.autoprefixer))
     .on('error', utils.handleError)
     .pipe(gulpif(!config.production, sourcemaps.write()))
-    .pipe(gulpif(config.production, minify()))
+    .pipe(gulpif(config.production, cleanCSS()))
     .pipe(gulp.dest(config.less.dest));
 });

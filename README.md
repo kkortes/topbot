@@ -1,10 +1,19 @@
 { topbot }
 ======
+Installation
+- Download/pull the repo and put it in your web-directory
+- If you are using PHP/Apache make sure to set a host pointing at topbot directory
+- Run "npm install" in the root directory
+- Run "bower install" in the root directory
+- Run "gulp default" once in the root directory
+- Run "gulp watch"
+======
 
-A minimalistic PHP no-style-theme starter kit.
+A minimalistic PHP (optional HTML) no-style-theme starter kit.
 
-I've come to the conclusion that all websites shares some equal denominators. Topbot takes the standards as far as it gets without making the website personal. Nothing is forced upon you, you choose what to use and what to keep.
+I've come to the conclusion that all websites shares some equal denominators. Topbot takes the standards as far as it gets without overdoing anything. Nothing is forced upon you, you choose what to use and what to keep.
 
+- Coffee removed to make room for ES6. Added babel and browserify to go with that.
 - Gulp added, grunt removed. Gulp builds faster, that's a reason enought to swap :>
 - HTML-suit compiler added! You can visit myurl.com/?compile and compile a single PHP page to clean HTML! If you want every single page that you've created HTML'ed, just go through every one of them and run the ?compile.
 - Crow is updated. Beside from .stylus it's now also compile'able in .less :> this is also true for topbot's CSS.

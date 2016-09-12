@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export default class Utils {
   constructor() {
 
@@ -6,19 +8,21 @@ export default class Utils {
     this.placeholderImage();
   }
 
-  getPlatform(withorientation) {
-    let getPlatform, init, placeholderImage;
+  static getOrientation() {
+    let orientation = window.getComputedStyle(document.body, ':before').getPropertyValue('content').replace(/'/g, '').replace(/"/g, '');
     
-    let platform;
-    if (withorientation == null) {
-      withorientation = false;
-    }
-    platform = window.getComputedStyle(document.body, ':before').getPropertyValue('content').replace(/'/g, '').replace(/"/g, '');
-    if (!withorientation) {
-      platform = platform.split(' ');
-      platform = platform[0];
-    }
-    return platform;
+    orientation = orientation.split(' ');
+    orientation = orientation[1];
+    
+    return orientation;
+  }
+  static getDevice() {
+    let device = window.getComputedStyle(document.body, ':before').getPropertyValue('content').replace(/'/g, '').replace(/"/g, '');
+    
+    device = device.split(' ');
+    device = device[0];
+    
+    return device;
   }
 
   placeholderImage() {

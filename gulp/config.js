@@ -13,10 +13,10 @@ module.exports = {
     dest: 'public/css'
   },
 
-  libs: {
-    src: ['./bower_components/jquery/dist/jquery.js'],
-    dest: 'public/js'
-  },
+  // libs: {
+  //   src: ['./bower_components/jquery/dist/jquery.js'],
+  //   dest: 'public/js'
+  // },
 
   browserify: {
     src: ['assets/js/base.js'],
@@ -34,12 +34,12 @@ module.exports = {
   // },
 
   images: {
-    src: 'assets/image/**/*',
-    dest: 'public/image'
+    src: 'assets/images/**/*',
+    dest: 'public/images'
   },
 
   copy: {
-    src: ['./assets/*icomoon/**/*'],
+    src: ['./assets/*icomoon/**/*', './assets/*fonts/**/*'],
     dest: 'public'
   },
 
@@ -58,7 +58,7 @@ module.exports = {
     src: [
       'public/css',
       'public/js',
-      'public/image'
+      'public/images'
     ]
   }
 };
