@@ -81,6 +81,16 @@ img {
 
 // Topbot specifics, remove everything below this line
 
+[v-cloak] {
+  display: none !important;
+}
+
+#wrapper {
+  .fullwidth {
+    padding-top: 50px;
+  }
+}
+
 @media @tablet {
   .less-color {
     color: red;
@@ -152,7 +162,8 @@ hr {
     background-color: @white;
     border-bottom: 1px solid #edeeee;
     padding: 10px 10px 13px 10px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     .icon {
       &.icon-menu {
         display: none;

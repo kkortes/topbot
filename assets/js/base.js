@@ -17,6 +17,13 @@ function init() {
       orientation: false,
       label: false
     },
+    watch: {
+      'orientation': function(newVal) {
+        if(newVal) {
+          document.title = newVal + ' - { topbot }'
+        }
+      }
+    },
     events: {
       'resize' : 'windowResize'
     },

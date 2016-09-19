@@ -19,7 +19,7 @@
         <ul class="inline crow up">
           <li class="ws-12">
             <h2>Short introduction</h2>
-            What is topbot? Why should I use topbot? These are two questions you may ask yourself coming here. Topbot started as a small CSS project which solved the problem with <i>a real</i> sticky footer.<br /><br />During years of web development I found myself coming back to grab what topbot has to offer. Over time, small innocent additions has been made to topbot. The idea is not to push your project in any direction, but to offer the lowest common denominator for all web projects.<br /><br />If something in topbot doesn't suit your need, simply remove it.
+            What is topbot? Why should I use topbot? These are two questions you may ask yourself. Topbot started as a small CSS project which solved the problem with <i>a real</i> sticky footer.<br /><br />During years of web development I found myself coming back to grab what topbot has to offer. Over time, small additions has been made to topbot. The idea is not to push your project in any direction, but to offer the lowest common denominator for all web projects.<br /><br />If something in topbot doesn't suit your need, simply remove it.
             <div class="spacer"></div>
           </li>
           <li class="ws-6">

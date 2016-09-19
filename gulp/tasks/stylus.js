@@ -13,17 +13,17 @@ gulp.task('stylus', function () {
   var settings = {
     stylus: {
       compress: false,
-      'include css': true,
+      //'include css': true,
 
       paths: [
         'node_modules'
       ],
 
-      import: [
-        'normalize.css/normalize.css',
-        '@ardentic/stylus-jiggers/jiggers',
-        '@ardentic/stylus-mq/mq'
-      ]
+      // import: [
+      //   'normalize.css/normalize.css',
+      //   '@ardentic/stylus-jiggers/jiggers',
+      //   '@ardentic/stylus-mq/mq'
+      // ]
     },
 
     autoprefixer: {
