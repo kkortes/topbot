@@ -14,3 +14,9 @@ SetEnv no-gzip dont-vary
 Order Deny,Allow
 Deny from All
 </Files>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
