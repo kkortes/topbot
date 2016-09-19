@@ -9,7 +9,6 @@
 
     <a href="https://github.com/kkortes/topbot" target="_blank"><span class="icon icon-github"></span>&nbsp;&nbsp;Download</a>
 
-    <div class="spacer"></div>
   </div>
 </div>
 <div class="fullwidth">
