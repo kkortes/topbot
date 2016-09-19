@@ -4,7 +4,6 @@ Installation
 - Download/pull the repo and put it in your web-directory
 - If you are using PHP/Apache make sure to set a host pointing at topbot directory
 - Run "npm install" in the root directory
-- Run "bower install" in the root directory
 - Run "gulp default" once in the root directory
 - Run "gulp watch"
 ======
