@@ -29,7 +29,7 @@
           </li>
           <li class="ws-6">
             <h2>CSS</h2>
-            <p>Minimal amount of CSS. Basically what you want and need for every web project. Write LESS/Stylus, compile to CSS.
+            <p>Minimal amount of CSS. Basically what you want and need for every web project. Write LESS/SASS/Stylus, compile to CSS.
             </p>
             <div class="spacer half"></div>
           </li>
@@ -44,6 +44,7 @@
             The JS-detection goes hand-in-hand with the CSS.
             <br /><code>@media @tablet { color: <span class="less-color">red</span>; }</code> for LESS
             <br /><code>@media $tablet { color: <span class="stylus-color">blue</span>; }</code> for Stylus.
+            <br /><code>@media ($tablet) { color: <span class="sass-color">green</span>; }</code> for SASS.
             </p>
             <div class="spacer half"></div>
           </li>

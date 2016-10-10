@@ -2,12 +2,17 @@ import Utils from './utils';
 
 import Vue from 'vue';
 import VueImage from './image.vue';
+import VueColumnScroll from './columnscroll.vue';
+import VueCard from './card.vue';
 
 import resizeMixin from 'vue-resize-mixin';
+require('vue-scroll');
 
 function init() {
 
   Vue.component('vueimage', VueImage);
+  Vue.component('vuecolumnscroll', VueColumnScroll);
+  Vue.component('vuecard', VueCard);
 
   new Vue({
     el: 'html',
@@ -15,7 +20,8 @@ function init() {
     data: {
       device: false,
       orientation: false,
-      label: false
+      label: false,
+      positionTop: 0
     },
     watch: {
       'orientation': function(newVal) {
@@ -36,6 +42,10 @@ function init() {
       }
     },
     methods: {
+      onScroll: function(e, position) {
+        this.positionTop = position.scrollTop;
+        //this.$dispatch('viewScrolled', this.positionTop);
+      },
       windowResize: function() {
         // Set device (based on the standard 767px for smartphone and 1199px for tablet)
         if(Utils.getDevice() == 'smartphone') {

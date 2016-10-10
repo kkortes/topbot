@@ -13,8 +13,8 @@ html {
 }
 
 .auto-widths (@i) when (@i > 0) {
-  > div:first-child:nth-last-child(@{i}),
-  > div:first-child:nth-last-child(@{i}) ~ div  {
+  > *:first-child:nth-last-child(@{i}),
+  > *:first-child:nth-last-child(@{i}) ~ *  {
     @percent:100/@i;
     width:~"@{percent}%";
   }

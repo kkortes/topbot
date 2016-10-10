@@ -13,6 +13,11 @@ module.exports = {
     dest: 'public/css'
   },
 
+  sass: {
+    src: 'assets/scss/base.scss',
+    dest: 'public/css'
+  },
+
   // libs: {
   //   src: ['./bower_components/jquery/dist/jquery.js'],
   //   dest: 'public/js'

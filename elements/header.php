@@ -9,6 +9,6 @@
 
   <link rel="stylesheet" type="text/css" href="<?=$app->url?>public/css/base.css?v=<?=date('hs')?>" />
 </head>
-<body class="page-<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>">
+<body class="page-<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>" v-scroll="onScroll">
 <?=$app->get('parts/top')?>
 <div id="wrapper">
