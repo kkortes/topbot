@@ -12,3 +12,4 @@
 <body class="page-<?=(isset($_GET['page']) ? $_GET['page'] : 'index')?>" v-scroll="onScroll">
 <?=$app->get('parts/top')?>
 <div id="wrapper">
+<div style="height:49px;"></div>

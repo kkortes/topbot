@@ -1,18 +1,17 @@
 import Utils from './utils';
 
 import Vue from 'vue';
-import VueImage from './image.vue';
-import VueColumnScroll from './columnscroll.vue';
-import VueCard from './card.vue';
 
 import resizeMixin from 'vue-resize-mixin';
 require('vue-scroll');
 
 function init() {
 
-  Vue.component('vueimage', VueImage);
-  Vue.component('vuecolumnscroll', VueColumnScroll);
-  Vue.component('vuecard', VueCard);
+  Vue.component('vueimage', require('./image.vue'));
+  Vue.component('vuecolumnscroll', require('./columnscroll.vue'));
+  Vue.component('vuecard', require('./card.vue'));
+  Vue.component('vueslider', require('./slider.vue'));
+  Vue.component('vuecircleloader', require('./circleloader.vue'));
 
   new Vue({
     el: 'html',
