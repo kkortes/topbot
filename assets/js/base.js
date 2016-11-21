@@ -8,10 +8,7 @@ require('vue-scroll');
 function init() {
 
   Vue.component('vueimage', require('./image.vue'));
-  Vue.component('vuecolumnscroll', require('./columnscroll.vue'));
-  Vue.component('vuecard', require('./card.vue'));
-  Vue.component('vueslider', require('./slider.vue'));
-  Vue.component('vuecircleloader', require('./circleloader.vue'));
+  //Vue.component('vueslider', require('./slider.vue'));
 
   new Vue({
     el: 'html',

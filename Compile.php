@@ -105,7 +105,7 @@ if(isset($_GET['compile'])) {
             }
             ?>
             <div class="ws-12">
-              Successfull! <a href="<?=$app->url?>">Close this window</a>
+              Success! <a href="<?=$app->url?>">Close this window</a>
             </div>
             <?
           }
