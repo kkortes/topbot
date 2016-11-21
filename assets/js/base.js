@@ -8,7 +8,6 @@ require('vue-scroll');
 function init() {
 
   Vue.component('vueimage', require('./image.vue'));
-  //Vue.component('vueslider', require('./slider.vue'));
 
   new Vue({
     el: 'html',
