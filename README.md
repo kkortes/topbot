@@ -13,7 +13,7 @@ A minimalistic PHP (optional HTML) no-style-theme starter kit.
 
 I've come to the conclusion that all websites shares some equal denominators. Topbot takes the standards as far as it gets without overdoing anything. Nothing is forced upon you, you choose what to use and what to keep.
 
-- Crow 2.0 is in. Crow can now compile to CSS from not only stylus, but also sass and less. Also added flexbox as an option.
+- Crow 3.0 is in. Crow can now compile to CSS from not only stylus, but also sass and less. Also added flexbox as an option.
 - Coffee removed to make room for ES6. Added babel and browserify to go with that.
 - Gulp added, grunt removed. Reason for that being that gulp builds faster.
 - HTML-suit compiler added! You can visit myurl.com/?compile and compile a single PHP page to clean HTML! If you want every single page that you've created HTML'ed, just go through every one of them and run the ?compile.
