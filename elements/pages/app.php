@@ -8,7 +8,7 @@
 				<p>App.php is a system file that is located in the project root folder.</p>
 				<p>It's important to have friendly server variables to use for links and includes, this is what App.php does for you.</p>
 				<p>It's pretty nice to be able to use
-				<code><?=htmlspecialchars('<script src="<?=$app->url?>assets/script.js"></script>');?></code>
+				<code><?php echo htmlspecialchars('<script src="<?php echo $app->url?>assets/script.js"></script>');?></code>
 				and not worry if your url structure is "localhost/myweb", "myweb" or "myweb.com"?
 				</p>
 				<p>App.php can be included standalone, as it is. Though if you do it that way, it's important that the file is placed in your project root folder. If not, its parameters won't be accurate.

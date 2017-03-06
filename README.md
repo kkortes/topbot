@@ -6,6 +6,7 @@ Installation
 - Run "npm install" in the root directory
 - Run "gulp default" once in the root directory
 - Run "gulp watch"
+
 ======
 
 A minimalistic PHP (optional HTML) no-style-theme starter kit.

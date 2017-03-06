@@ -1,6 +1,6 @@
 <div class="navigation">
   <ul class="inline">
-    <?
+    <?php
     $glob = glob(__DIR__.'/../pages/*');
     foreach($glob as $node) {
       $page = explode('/',$node);
@@ -17,13 +17,13 @@
           $class = 'active';
         }
       ?>
-        <li><a href="<?=$app->url?><?=$page[0]?>" class="<?=$class?> tab-link"><?=$page[0]?></a></li>
-      <?
+        <li><a href="<?php echo $app->url?><?php echo $page[0]?>" class="<?php echo $class?> tab-link"><?php echo $page[0]?></a></li>
+      <?php
       }
     }
     ?>
   
-    <?
+    <?php
     $glob = glob(__DIR__.'/../modules/*');
     foreach($glob as $node) {
       $page = explode('/',$node);
@@ -37,8 +37,8 @@
           $class = 'active';
         }
       ?>
-        <li><a href="<?=$app->url?>modules/module/<?=$page[0]?>" class="<?=$class?> tab-link"><?=$page[0]?></a></li>
-      <?
+        <li><a href="<?php echo $app->url?>modules/module/<?php echo $page[0]?>" class="<?php echo $class?> tab-link"><?php echo $page[0]?></a></li>
+      <?php
       }
     }
     ?>

@@ -29,9 +29,9 @@ unit-widths(nums)
       $percent = 100*i/$unit-widths-iterations
       width: $percent+"%"
 
-crow()
+crowify()
   text-align: center
-  font-size: 0
+  font-size: 0 !important
   &:before
     content: ''
     display: inline-block
@@ -45,47 +45,68 @@ crow()
     text-align: left
     margin: 0
     padding: 0
-    
-.crow
-  padding: 0 ($gutter * 1px)
-  crow()
-  percent-widths($percent-widths-iterations)
-  unit-widths($unit-widths-iterations)
   &.fly
     auto-widths($auto-widths-iterations)
-  .crow
-    font-size: 0
-  > *
-    padding: 0 ($gutter * 1px)
-    &.up
-      vertical-align: top
-    &.down
-      vertical-align: bottom
   &.up
     > *
       vertical-align: top
   &.down
     > *
       vertical-align: bottom
-  &.no-gutter
-    padding: 0
+  > *
+    &.up
+      vertical-align: top
+    &.down
+      vertical-align: bottom
+
+flex-crowify()
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  align-content: center
+  &.fly
     > *
-      padding: 0
+      flex-grow: 1
+  &.up
+    align-items: flex-start
+  &.down
+    align-items: flex-end
+  > *
+    &.up
+      align-self: flex-start
+    &.down
+      align-self: flex-end;
+    
+.crow
+  crowify()
+  percent-widths($percent-widths-iterations)
+  unit-widths($unit-widths-iterations)
+
+.crow
+  &.gutter
+    padding-right: ($gutter * 1px)
+    padding-left: ($gutter * 1px)
+    margin-right: (- $gutter * 1px)
+    margin-left: (- $gutter * 1px)
+    > *
+      padding-right: ($gutter * 1px)
+      padding-left: ($gutter * 1px)
 
 .nest
   width: 960px
-  margin: 0 auto
-  padding: 0 ($gutter * 1px)
-  > .crow
-    margin: 0 (- $gutter * 1px)
-    padding: 0
+  padding-right: ($gutter * 1px)
+  padding-left: ($gutter * 1px)
+  margin-right: auto
+  margin-left: auto
     
-uncrow()
+uncrowify()
   &.crow
     height: auto
+    display: block
     > *
       display: block
-      width: 100%
+      width: auto
     &:before
       content: ''
       display: none

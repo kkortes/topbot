@@ -1,4 +1,4 @@
-<?
+<?php
 if(isset($_GET['compile'])) {
   ?>
   <div class="modal" style="position: fixed;width:100%;height:100%;top:0;left:0;background-color: rgba(0,0,0,.9);">
@@ -6,7 +6,7 @@ if(isset($_GET['compile'])) {
       <div class="card ws-12" style="padding: 10px;">
         <div class="spacer half"></div>
         <div class="crow">
-          <?
+          <?php
           if(!isset($_POST['dest'])) {
           ?>
           <div class="ws-4">
@@ -22,7 +22,7 @@ if(isset($_GET['compile'])) {
             <form method="post" action="">
               <div class="form crow up no-gutter">
                 <div class="crow ws-6">
-                  <?
+                  <?php
                   foreach(glob(__DIR__.'/*') as $file) {
                     $thisfile = explode('/', $file);
                     $thisfile = end($thisfile);
@@ -55,18 +55,18 @@ if(isset($_GET['compile'])) {
 
                   ?>
                   <div class="ws-2">
-                    <? if($show === true) { ?>
-                    <input type="checkbox" id="<?=$thisfile?>" name="<?=$thisfile?>" value="<?=$thisfile?>" checked />
-                    <? }elseif($show) { ?>
-                    <input type="checkbox" id="<?=$thisfile?>" name="<?=$thisfile?>" />
-                    <? }else{ ?>
+                    <?php if($show === true) { ?>
+                    <input type="checkbox" id="<?php echo $thisfile?>" name="<?php echo $thisfile?>" value="<?php echo $thisfile?>" checked />
+                    <?php }elseif($show) { ?>
+                    <input type="checkbox" id="<?php echo $thisfile?>" name="<?php echo $thisfile?>" />
+                    <?php }else{ ?>
                     -
-                    <? } ?>
+                    <?php } ?>
                   </div>
                   <div class="ws-10">
-                    <label for="<?=$thisfile?>"><?=$thisfile?></label>
+                    <label for="<?php echo $thisfile?>"><?php echo $thisfile?></label>
                   </div>
-                  <? } ?>
+                  <?php } ?>
                 </div>
                 <div class="ws-6">
                   <label for="dest">Destination directory <span class="small">(from root)</span></label>
@@ -74,7 +74,7 @@ if(isset($_GET['compile'])) {
                   <div class="spacer half"></div>
 
                   <label for="dest">Name for HTML-file</label>
-                  <input type="text" id="name" name="name" value="<?=isset($_GET['page']) ? $_GET['page'].'.html' : 'index.html'?>" />
+                  <input type="text" id="name" name="name" value="<?php echo isset($_GET['page']) ? $_GET['page'].'.html' : 'index.html'?>" />
                   <div class="spacer half"></div>
 
                   <input type="submit" class="bg-cyan text-white" value="Compile" />
@@ -82,7 +82,7 @@ if(isset($_GET['compile'])) {
               </div>
             </form>
           </div>
-          <?
+          <?php
           }else{
             $dest = $_POST['dest'];
             unset($_POST['dest']);
@@ -105,9 +105,9 @@ if(isset($_GET['compile'])) {
             }
             ?>
             <div class="ws-12">
-              Success! <a href="<?=$app->url?>">Close this window</a>
+              Success! <a href="<?php echo $app->url?>">Close this window</a>
             </div>
-            <?
+            <?php
           }
           ?>
         </div>
@@ -115,7 +115,7 @@ if(isset($_GET['compile'])) {
       </div>
     </div>
   </div>
-  <?
+  <?php
 }
 
 function recurse_copy($source, $dest) {
