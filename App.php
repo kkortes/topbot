@@ -32,7 +32,8 @@ class App {
       $url = implode('.php', $url);
       $explode = explode('/', $url);
       $end = end($explode);
-      $url = str_replace($end, '', $url);
+      $url = '.'.str_replace($end, '', $url);
+
     }
 
     $config = array(

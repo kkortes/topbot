@@ -23,7 +23,7 @@ if(isset($_GET['compile'])) {
               <div class="form crow up no-gutter">
                 <div class="crow ws-6">
                   <?php
-                  foreach(glob(__DIR__.'/*') as $file) {
+                  foreach(glob(__DIR__.'/{,.}*', GLOB_BRACE) as $file) {
                     $thisfile = explode('/', $file);
                     $thisfile = end($thisfile);
 
@@ -36,6 +36,12 @@ if(isset($_GET['compile'])) {
                       $thisfile == '404.php' ||
                       $thisfile == 'functions.php' ||
                       $thisfile == 'index.php' ||
+                      $thisfile == '.' ||
+                      $thisfile == '..' ||
+                      $thisfile == '.DS_Store' ||
+                      $thisfile == '.git' ||
+                      $thisfile == '.gitignore' ||
+                      $thisfile == '.htaccess' ||
                       $thisfile == 'SAMPLE.config.json.php'
                       )
                       $show = false;
@@ -49,7 +55,8 @@ if(isset($_GET['compile'])) {
                       $thisfile == 'favicon-tablet.ico' ||
                       $thisfile == 'favicon-smartphone.ico' ||
                       $thisfile == 'package.json' ||
-                      $thisfile == 'gulpfile.js'
+                      $thisfile == 'gulpfile.babel.js' ||
+                      $thisfile == '.babelrc'
                     )
                       $show = true;
 

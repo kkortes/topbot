@@ -1,13 +1,12 @@
+import gulp from 'gulp'
+import changed from 'gulp-changed'
 
-var gulp = require('gulp'),
-  changed = require('gulp-changed');
+import utils from '../utils'
+import config from '../config'
 
-var utils = require('../utils'),
-  config = require('../config');
-
-gulp.task('copy', function () {
+gulp.task('copy', () => {
   return gulp.src(config.copy.src)
     .pipe(changed(config.copy.dest))
     .pipe(gulp.dest(config.copy.dest))
     .on('error', utils.handleError);
-});
+})

@@ -2,8 +2,8 @@ import $ from 'jquery';
 
 export default class Utils {
   constructor() {
-
   }
+
   init() {
     this.placeholderImage();
   }

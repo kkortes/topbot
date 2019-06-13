@@ -1,15 +1,15 @@
-var gulp = require('gulp'),
-    gulpif = require('gulp-if'),
-    less = require('gulp-less'),
-    cleanCSS = require('gulp-clean-css'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer');
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import less from 'gulp-less'
+import cleanCSS from 'gulp-clean-css'
+import sourcemaps from 'gulp-sourcemaps'
+import autoprefixer from 'gulp-autoprefixer'
 
-var utils = require('../utils'),
-  config = require('../config'),
-  path = require('path');
+import utils from '../utils'
+import config from '../config'
+import path from 'path'
  
-gulp.task('less', function () {
+gulp.task('less', () => {
   var settings = {
     less:{
       paths: [ path.join(__dirname, 'less', 'includes') ]

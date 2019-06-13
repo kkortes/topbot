@@ -4,7 +4,7 @@
       <div class="ws-12">
         <div class="spacer"></div>
 
-        <img src="<?php echo $app->url?>assets/images/topbot.png" style="width: 80px; display: inline-block;">
+        <img src="<?php echo $app->url?>public/images/topbot.png" style="width: 80px; display: inline-block;">
         <h1 style="display: inline-block; vertical-align: top;margin: 25px 0 0 10px;">{ topbot }</h1>
         <p>A minimalistic PHP no-style-theme starter kit.
         </p>

@@ -1,4 +1,4 @@
-var gutil = require('gulp-util');
+import gutil from 'gulp-util'
 
 module.exports = {
   production: gutil.env.production || process.env.NODE_ENV === 'production' || false,
@@ -66,4 +66,4 @@ module.exports = {
       'public/images'
     ]
   }
-};
+}

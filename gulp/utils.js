@@ -1,6 +1,5 @@
-
-var notify = require('gulp-notify');
-var config = require('./config');
+import notify from 'gulp-notify'
+import config from './config'
 
 module.exports = {
   handleError: function (error) {
@@ -13,4 +12,4 @@ module.exports = {
 
     this.emit('end');
   }
-};
+}

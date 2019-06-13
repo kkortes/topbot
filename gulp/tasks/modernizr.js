@@ -1,14 +1,13 @@
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import uglify from 'gulp-uglify'
+import concat from 'gulp-concat'
+import modernizr from 'gulp-modernizr'
 
-var gulp = require('gulp'),
-  gulpif = require('gulp-if'),
-  uglify = require('gulp-uglify'),
-  concat = require('gulp-concat'),
-  modernizr = require('gulp-modernizr');
+import utils from '../utils'
+import config from '../config'
 
-var utils = require('../utils'),
-  config = require('../config');
-
-gulp.task('modernizr', function () {
+gulp.task('modernizr', () => {
   gulp.src('./' + config.modernizr.src)
     .on('error', utils.handleError)
     .pipe(concat('modernizr-custom.js'))

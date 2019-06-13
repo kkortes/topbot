@@ -1,12 +1,12 @@
-var gulp = require('gulp'),
-  gulpif = require('gulp-if'),
-  uglify = require('gulp-uglify'),
-  concat = require('gulp-concat');
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import uglify from 'gulp-uglify'
+import concat from 'gulp-concat'
 
-var utils = require('../utils'),
-  config = require('../config');
+import utils from '../utils'
+import config from '../config'
 
-gulp.task('libs', function () {
+gulp.task('libs', () => {
   gulp.src(config.libs.src)
     .on('error', utils.handleError)
     .pipe(concat('libs.js'))

@@ -1,14 +1,14 @@
-var gulp = require('gulp'),
-  gulpif = require('gulp-if'),
-  stylus = require('gulp-stylus'),
-  cleanCSS = require('gulp-clean-css'),
-  sourcemaps = require('gulp-sourcemaps'),
-  autoprefixer = require('gulp-autoprefixer');
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import stylus from 'gulp-stylus'
+import cleanCSS from 'gulp-clean-css'
+import sourcemaps from 'gulp-sourcemaps'
+import autoprefixer from 'gulp-autoprefixer'
 
-var utils = require('../utils'),
-  config = require('../config');
+import utils from '../utils'
+import config from '../config'
 
-gulp.task('stylus', function () {
+gulp.task('stylus', () => {
   var settings = {
     stylus: {
       compress: false,
@@ -28,7 +28,7 @@ gulp.task('stylus', function () {
     autoprefixer: {
       browsers: ['last 5 versions', '> 1%', 'ie 9']
     }
-  };
+  }
 
   return gulp
     .src(config.stylus.src)
@@ -40,4 +40,4 @@ gulp.task('stylus', function () {
     .pipe(gulpif(!config.production, sourcemaps.write()))
     .pipe(gulpif(config.production, cleanCSS()))
     .pipe(gulp.dest(config.stylus.dest));
-});
+})
