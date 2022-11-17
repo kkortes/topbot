@@ -1,36 +1,37 @@
-import gutil from 'gulp-util'
+import gutil from "gulp-util";
 
 module.exports = {
-  production: gutil.env.production || process.env.NODE_ENV === 'production' || false,
+  production:
+    gutil.env.production || process.env.NODE_ENV === "production" || false,
 
   stylus: {
-    src: 'assets/styl/base.styl',
-    dest: 'public/css'
+    src: "assets/styl/base.styl",
+    dest: "static/css",
   },
 
   less: {
-    src: 'assets/less/base.less',
-    dest: 'public/css'
+    src: "assets/less/base.less",
+    dest: "static/css",
   },
 
   sass: {
-    src: 'assets/scss/base.scss',
-    dest: 'public/css'
+    src: "assets/scss/base.scss",
+    dest: "static/css",
   },
 
   // libs: {
   //   src: ['./bower_components/jquery/dist/jquery.js'],
-  //   dest: 'public/js'
+  //   dest: 'static/js'
   // },
 
   browserify: {
-    src: ['assets/js/base.js'],
-    dest: 'public/js'
+    src: ["assets/js/base.js"],
+    dest: "static/js",
   },
 
   // concat: {
   //   src: 'assets/js/*',
-  //   dest: 'public/js'
+  //   dest: 'static/js'
   // },
 
   // coffee: {
@@ -39,31 +40,24 @@ module.exports = {
   // },
 
   images: {
-    src: 'assets/images/**/*',
-    dest: 'public/images'
+    src: "assets/images/**/*",
+    dest: "static/images",
   },
 
   copy: {
-    src: ['./assets/*icomoon/**/*', './assets/*fonts/**/*'],
-    dest: 'public'
+    src: ["./assets/*icomoon/**/*", "./assets/*fonts/**/*"],
+    dest: "static",
   },
 
   modernizr: {
-    src: 'assets/js/**/*',
-    dest: 'public/js/libs',
+    src: "assets/js/**/*",
+    dest: "static/js/libs",
     args: {
-      options: [
-        'html5shiv',
-        'setClasses'
-      ]
-    }
+      options: ["html5shiv", "setClasses"],
+    },
   },
 
   clean: {
-    src: [
-      'public/css',
-      'public/js',
-      'public/images'
-    ]
-  }
-}
+    src: ["static/css", "static/js", "static/images"],
+  },
+};

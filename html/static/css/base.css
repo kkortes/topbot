@@ -1,13 +1,21 @@
-@import "../../public/icomoon/style.css";
+@import "../../static/icomoon/style.css";
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg#openSansBold') format('svg');
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("../fonts/OpenSans-Bold.svg#openSansBold") format("svg");
 }
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans-Regular.eot');
-  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg#openSansRegular') format('svg');
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("../fonts/OpenSans-Regular.svg#openSansRegular") format("svg");
 }
 footer,
 .bot,
@@ -42,7 +50,7 @@ body:before {
 }
 @media (min-width: 1200px) {
   body:before {
-    content: 'desktop';
+    content: "desktop";
   }
 }
 @media (max-width: 767px) {
@@ -50,17 +58,17 @@ body:before {
     width: auto;
   }
   body:before {
-    content: 'smartphone';
+    content: "smartphone";
   }
 }
 @media (orientation: portrait) and (max-width: 767px) {
   body:before {
-    content: 'smartphone vertical';
+    content: "smartphone vertical";
   }
 }
 @media (orientation: landscape) and (max-width: 767px) {
   body:before {
-    content: 'smartphone horizontal';
+    content: "smartphone horizontal";
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -68,17 +76,17 @@ body:before {
     width: 750px;
   }
   body:before {
-    content: 'tablet';
+    content: "tablet";
   }
 }
 @media (orientation: portrait) and (min-width: 768px) and (max-width: 1199px) {
   body:before {
-    content: 'tablet vertical';
+    content: "tablet vertical";
   }
 }
 @media (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
   body:before {
-    content: 'tablet horizontal';
+    content: "tablet horizontal";
   }
 }
 /* Set to how many columns you want enable for auto fly operation */
@@ -98,7 +106,7 @@ html {
   font-size: 0 !important;
 }
 .crow:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -529,7 +537,7 @@ html {
 body {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'OpenSans-Regular', Arial;
+  font-family: "OpenSans-Regular", Arial;
   color: #000;
   background-color: #fafafa;
   overflow: hidden;
@@ -653,7 +661,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 10px 0;
-  font-family: 'OpenSans-Regular', Arial;
+  font-family: "OpenSans-Regular", Arial;
 }
 p {
   margin: 0 0 10px 0;
