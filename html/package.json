@@ -2,6 +2,7 @@
   "name": "topbot",
   "repository": "https://github.com/kkortes/topbot.git",
   "license": "MIT",
+  "main": "index.html",
   "engines": {
     "node": "5.1.x",
     "npm": "3.3.x"
