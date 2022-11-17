@@ -9,3 +9,4 @@ nano
 config.json.php
 */.DS_Store
 .DS_Store
+.vercel
