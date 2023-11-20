@@ -20,7 +20,7 @@ I've come to the conclusion that all websites shares some equal denominators. To
 - Leaf removed from standard topbot. If you want to include leaf in your project you will have to do it yourself. (http://getleaf.eu) After all, it's a no-style-theme.
 - Grunt added.
 - Topbot now includes crow! Crow is a grid css framework for awesome box alignment within rows. 
-  You can read more about crow here (http://getcrow.eu)
+  You can read more about crow here (http://crow.korte.kim)
 - Custom .htaccess added! It's possible to remove if not desired. Uses "smart"-url with the 
   structure /topbot/pagename/variable/value/variable2/value2?variable3=value3 you can go as far as you like!
 - IMG-tag automagic added. This is solely for markup purposes (to speed up the process)
