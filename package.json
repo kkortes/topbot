@@ -39,7 +39,7 @@
     "vue": "^1.0.25",
     "vue-resize-mixin": "^1.0.1",
     "vue-scroll": "^1.0.4",
-    "watchify": "^3.6.1"
+    "watchify": "^3.11.1"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
